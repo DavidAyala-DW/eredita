@@ -11,35 +11,35 @@ import MenDesktop from "../public/SUN.webp";
 import Women from "../public/Optical-full.webp";
 import WomenDesktop from "../public/Optical.webp"
 
-import Sun1 from "../public/sun1_front.png";
-import Sun1Main from "../public/sun1_main.png";
+import Sun1 from "../public/sun_1f.jpg";
+import Sun1Main from "../public/sun_1m.jpg";
 
-import Sun2 from "../public/sun2_front.png";
-import Sun2Main from "../public/sun2_main.png";
+import Sun2 from "../public/sun_2f.jpg";
+import Sun2Main from "../public/sun_2m.jpg";
 
-import Sun3 from "../public/sun3_front.png";
-import Sun3Main from "../public/sun3_main.png";
+import Sun3 from "../public/sun_3f.jpg";
+import Sun3Main from "../public/sun_3m.jpg";
 
 import Sun4 from "../public/sun4_front.png";
-import Sun4Main from "../public/sun4_main.png";
+import Sun4Main from "../public/sun_4m.jpg";
 
 import Sun5 from "../public/sun5_front.png";
-import Sun5Main from "../public/sun5_main.png";
+import Sun5Main from "../public/sun_5m.jpg";
 
 import Sun6 from "../public/sun6_front.png";
-import Sun6Main from "../public/sun6_main.png";
+import Sun6Main from "../public/sun_6m.jpg";
 
 import Sun7 from "../public/sun7_front.png";
-import Sun7Main from "../public/sun7_main.png";
+import Sun7Main from "../public/sun_7m.jpg";
 
 import Sun8 from "../public/sun8_front.png";
-import Sun8Main from "../public/sun8_main.png";
+import Sun8Main from "../public/sun_8m.jpg";
 
 import Sun9 from "../public/sun9_front.png";
-import Sun9Main from "../public/sun9_main.png";
+import Sun9Main from "../public/sun_9m.jpg";
 
 import Sun10 from "../public/sun10_front.png";
-import Sun10Main from "../public/sun10_main.png";
+import Sun10Main from "../public/sun_10m.jpg";
 
 import RightArrow from "../public/right.svg";
 import LeftArrow from "../public/left.svg";
@@ -140,36 +140,36 @@ function SunCollection() {
 
       <div className="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-[60px] relative">
 
-        <div className="w-full h-[calc(100vw)] md:h-auto block relative border border-black">
+        <div className="w-full h-[calc(117vw)] md:h-auto block relative border border-black">
 
-          <div className="block lg:hidden">
+          <div className="block md:hidden">
             <Image
               src={activeProduct.mobile_image}
-              layout="fill"
+              layout="responsive"
               className="object-center oject-cover"
-              alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
+              alt=""
             />
           </div>
 
-          <div className="hidden lg:block max-w-[calc(77%)] h-full relative">
+          <div className="hidden md:block max-w-[calc(77%)] h-full relative">
             <Image
               src={activeProduct.desktop_image}
-              layout="fill"
-              className="object-center oject-cover"
-              alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
+              layout="responsive"
+              className="object-top oject-cover h-[50%]"
+              alt=""
             />
           </div>
 
           <div className="
-          bg-white lg:px-5  md:py-0 space-x-10  justify-center lg:rounded-[10px] bottom-0 inset-x-0
-            md:justify-center md:bottom-0 absolute md:max-w-full lg:max-w-[35.4%]
-            md:max-h-[129px] lg:h-full lg:max-h-[230px] overflow-y-hidden h-max w-full flex md:space-x-2.5 overflow-hidden
-            lg:flex-col lg:items-center lg:py-0 lg:shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)]
-            lg:top-[20%] lg:right-6 lg:left-auto
+          bg-white lg:px-5 space-x-10  justify-center md:rounded-[10px] bottom-0 inset-x-0
+            md:justify-center md:bottom-0 absolute md:max-w-[35.4%]
+            md:h-full md:max-h-[195px] overflow-y-hidden h-max w-full flex md:space-x-2.5 overflow-hidden
+            md:flex-col md:items-center md:py-0 md:shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)]
+            md:top-[calc(5vw*0.5)] lg:top-[20%] xl:top-[27%] lg:max-h-[231px]  md:right-6 md:left-auto
             "
           >
 
-            <div className="block relative w-full max-w-[20%] transform lg:mt-[-20px] md:max-w-[25%] lg:max-w-[151px] md:h-full">
+            <div className="block relative w-full transform lg:mt-[-20px] max-w-[100px] md:max-w-[151px] md:h-full">
 
               <Image
                 src={activeProduct.url}
@@ -211,7 +211,7 @@ function SunCollection() {
                   if(index > 5) return;
                   return (
                     
-                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] relative">
+                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] relative flex flex-col justify-center">
 
                       <div className="block px-2">
                         <Image
@@ -242,7 +242,7 @@ function SunCollection() {
                   if(index <= 5) return;
                   return (
                     
-                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] relative">
+                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] relative  flex flex-col justify-center">
 
                       <div className="block px-2">
                         <Image
