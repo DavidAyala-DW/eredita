@@ -204,7 +204,7 @@ function SunCollection() {
             className="block lg:grid w-full h-full"
           >
 
-            <SwiperSlide className="111 w-full flex flex-col h-full">
+            <SwiperSlide className="w-full flex flex-col h-full p-1">
 
               <div className="grid grid-cols-3 gap-x-[26px] select-none gap-y-10 w-full h-full">
 
@@ -234,7 +234,7 @@ function SunCollection() {
 
             </SwiperSlide>
 
-            <SwiperSlide className="222 w-full flex flex-col h-full">
+            <SwiperSlide className="w-full flex flex-col h-full p-1">
 
               <div className="grid grid-cols-3 gap-x-5 select-none gap-y-10 w-full h-full">
 
