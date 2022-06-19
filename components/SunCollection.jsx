@@ -20,25 +20,25 @@ import Sun2Main from "../public/sun_2m.jpg";
 import Sun3 from "../public/sun_3f.jpg";
 import Sun3Main from "../public/sun_3m.jpg";
 
-import Sun4 from "../public/sun4_front.png";
+import Sun4 from "../public/sun_4f.jpg";
 import Sun4Main from "../public/sun_4m.jpg";
 
-import Sun5 from "../public/sun5_front.png";
+import Sun5 from "../public/sun_5f.jpg";
 import Sun5Main from "../public/sun_5m.jpg";
 
-import Sun6 from "../public/sun6_front.png";
+import Sun6 from "../public/sun_6f.jpg";
 import Sun6Main from "../public/sun_6m.jpg";
 
-import Sun7 from "../public/sun7_front.png";
+import Sun7 from "../public/sun_7f.jpg";
 import Sun7Main from "../public/sun_7m.jpg";
 
-import Sun8 from "../public/sun8_front.png";
+import Sun8 from "../public/sun_8f.jpg";
 import Sun8Main from "../public/sun_8m.jpg";
 
-import Sun9 from "../public/sun9_front.png";
+import Sun9 from "../public/sun_9f.jpg";
 import Sun9Main from "../public/sun_9m.jpg";
 
-import Sun10 from "../public/sun10_front.png";
+import Sun10 from "../public/sun_10f.jpg";
 import Sun10Main from "../public/sun_10m.jpg";
 
 import RightArrow from "../public/right.svg";
@@ -195,6 +195,7 @@ function SunCollection() {
           <Swiper
             modules={[Navigation]}
             slidesPerView={1}
+            spaceBetween={5}
             loop={true}
             navigation={{
               prevEl: ".swiper-prev",
@@ -203,7 +204,7 @@ function SunCollection() {
             className="block lg:grid w-full h-full"
           >
 
-            <SwiperSlide className="w-full flex flex-col h-full">
+            <SwiperSlide className="111 w-full flex flex-col h-full">
 
               <div className="grid grid-cols-3 gap-x-[26px] select-none gap-y-10 w-full h-full">
 
@@ -233,7 +234,7 @@ function SunCollection() {
 
             </SwiperSlide>
 
-            <SwiperSlide className="w-full flex flex-col h-full">
+            <SwiperSlide className="222 w-full flex flex-col h-full">
 
               <div className="grid grid-cols-3 gap-x-5 select-none gap-y-10 w-full h-full">
 
