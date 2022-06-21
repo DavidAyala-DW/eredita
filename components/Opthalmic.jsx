@@ -231,9 +231,9 @@ function Opthalmic() {
                   if(index > 5) return;
                   return (
                     
-                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] relative">
+                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full relative flex flex-col space-y-5">
 
-                      <div className="block px-2">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-full">
                         <Image
                           src={product.url}
                           alt={product.url}
@@ -242,6 +242,10 @@ function Opthalmic() {
                           className="object-center object-cover"
                         />
                       </div>
+
+                      <p className="text-center text-lg font-semibold leading-[48px] text-[rgba(0,_0,_0,_0.87)]">
+                        {product.title}
+                      </p>
 
                     </div>
 
@@ -262,9 +266,9 @@ function Opthalmic() {
                   if(index <= 5) return;
                   return (
                     
-                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] relative">
+                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full flex flex-col space-y-5 relative">
 
-                      <div className="block px-2">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-full">
                         <Image
                           src={product.url}
                           alt={product.url}
@@ -273,6 +277,10 @@ function Opthalmic() {
                           className="object-center object-cover"
                         />
                       </div>
+
+                      <p className="text-center text-lg font-semibold leading-[48px] text-[rgba(0,_0,_0,_0.87)]">
+                        {product.title}
+                      </p>
 
                     </div>
 
