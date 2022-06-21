@@ -10,12 +10,12 @@ function Opportunity() {
 
     <section className="px-5 md:px-0 md:max-w-[85%] mx-auto w-full flex flex-col">
 
-      <h2 className="text-primary text-center uppercase font-black text-[24px] sm:text-[32px] leading-[38px] tracking-[.145em] mb-2">
-        What&apos;s In It For You
+      <h2 className="text-primary text-center uppercase font-black text-[24px] sm:text-[32px] leading-[38px] tracking-[.145em] mb-20">
+        The opportunity in numbers
       </h2>
       
-      <p className="mb-20 text-primary text-center tracking-[.145em] font-black">
-        The opportunity in numbers
+      <p className="mb-20 hidden text-primary text-center tracking-[.145em] font-black">
+        Open our Police Eyewear collection with a pre-selected 24 pc order
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full gap-x-[30px] gap-y-[100px]">

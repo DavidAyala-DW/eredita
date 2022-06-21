@@ -201,6 +201,7 @@ function SunCollection() {
               prevEl: ".swiper-prev",
               nextEl: ".swiper-next"
             }}
+            allowTouchMove={false}
             className="block lg:grid w-full h-full"
           >
 

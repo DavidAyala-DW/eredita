@@ -210,12 +210,16 @@ function Opthalmic() {
           
           <Swiper
             modules={[Navigation]}
+            allowTouchMove={false}
             slidesPerView={1}
             loop={true}
             navigation={{
               prevEl: ".swiper-prev-2",
               nextEl: ".swiper-next-2"
             }}
+            // onSwiper={(swiper) => {
+            //   console.log(swiper);
+            // }}
             className="block lg:grid w-full h-full"
           >
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import HeroArrow from "../public/hero_arrow.svg";
 import Button from './UI/Button';
 import HeroBanner from "../public/Bullet-Train-Background-Hero-WEB.webp"
-import HeroMain from "../public/Hero-Header-Glasses-WEB(1).png";
+import HeroMain from "../public/Eredità-Cineplex_Hero.png";
 
 function Hero() {
 
@@ -46,9 +46,9 @@ function Hero() {
             />
           </div>
 
-          <div className="flex flex-col mt-5">
+          <div className="flex flex-col mt-10 md:mt-5">
 
-            <h4 className="max-w-[220px] mb-4 md:mb-3 text-primary mx-auto text-sm leading-[22px] text-center font-bold uppercase tracking-[.145em]">
+            <h4 className="max-w-[110px] md:max-w-[220px] mb-8 md:mb-3 text-primary mx-auto text-base md:text-sm leading-[19px] md:leading-[22px] text-center font-bold uppercase tracking-[.145em]">
               Join the promotion
             </h4>
 

@@ -35,12 +35,13 @@ export default function Home() {
 
       <Opthalmic/>
 
-      <a href="https://ereditaeyewear.com/products/police-x-bullet-train" className="mt-9 select-none mb-12 max-w-max mx-auto">
+      <a href="https://ereditaeyewear.com/products/police-x-bullet-train" className="mt-9 select-none mb-14 w-full max-w-[calc(100%-48px)] md:max-w-max mx-auto">
         <Button
           color="primary"
           text="Apply To Participate"
           size="large"
           type="button"
+          className="!w-full !text-[20.15px] !leading-6 md:!text-[17.2px] md:!leading-[21px] md:!max-w-max sm:!min-w-[min-content]"
         />
       </a>
 

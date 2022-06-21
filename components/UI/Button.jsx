@@ -13,7 +13,7 @@ function Button({color,text,size,type,className}) {
   }
   
   return (
-    <button type={type} className={`${className} border w-max ${sizeClassName[size]} ${mode[color]} uppercase tracking-[.145em] font-bold text-center`}>
+    <button type={type} className={`${className} cursor-pointer hover:bg-[#f4c002] border w-max ${sizeClassName[size]} ${mode[color]} uppercase tracking-[.145em] font-bold text-center`}>
       {text}
     </button>
   )

@@ -22,11 +22,11 @@ function BannerWithText() {
 
         <div className="bg-banner_text absolute inset-0 w-full h-full opacity-60"></div>
 
-        <div className="flex flex-col justify-center items-center static py-20 w-full">
+        <div className="flex flex-col justify-center items-center static pt-[46px] pb-[110px] md:py-20 w-full">
 
           <div className="h-max px-6 max-w-max text-white flex flex-col z-[10]">
 
-            <h2 className="font-starduster text-center max-w-[971px] mx-auto text-[30px] sm:text-[32px] md:text-[38px] lg:text-[50px] xl:text-[60px] italic leading-[20px] sm:leading-[32px] md:leading-[48px] lg:leading-[56px] tracking-[-0.1em] mb-[25px]">
+            <h2 className="font-starduster text-center max-w-[971px] mx-auto text-[30px] sm:text-[32px] md:text-[38px] lg:text-[50px] xl:text-[60px] italic leading-[20px] sm:leading-[32px] md:leading-[48px] lg:leading-[56px] tracking-[-0.1em] mb-[45px] md:mb-[25px]">
               Team up with eredità & cineplex as an authorized retailer!
             </h2>
           
