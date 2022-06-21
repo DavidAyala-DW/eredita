@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import Button from './UI/Button'
-import Brands from "../public/brands_logos.svg"
 import ContactImage from "../public/US_20x30_brian-Bottom-CTA1.webp";
+import Eredita from "../public/eredita-contact.svg";
+import Cineplex from "../public/cineplex-contact.svg"
+import BulletTrain from "../public/bulletTrain.png"
 
 function ContactUs() {
   return (
@@ -48,8 +50,35 @@ function ContactUs() {
 
           </div>
 
-          <div className="max-w-[95%] lg:max-w-[calc(100%-80px)] mx-auto">
-            <Brands/>
+          <div className="max-w-[95%] lg:max-w-[calc(100%-80px)] flex items-center justify-between mx-auto">
+
+            <div className="w-full max-w-[32.84%]">
+              <Image
+              src="/eredita-contact.svg"
+              alt="svg"
+              layout="responsive"
+              width="181"
+              height="19.5"
+              />
+            </div>
+
+            <div className="w-full max-w-[22.9%]">
+              <Image
+              src="/cineplex-contact.svg"
+              alt="svg"
+              layout="responsive"
+              width="126"
+              height="34"
+              />
+            </div>
+
+            <div className="w-full max-w-[28.6%]">
+              <Image
+                src={BulletTrain}
+                alt="bullet-train"
+                layout="responsive"
+              />
+            </div>
           </div>
 
           
