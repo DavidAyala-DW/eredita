@@ -44,6 +44,7 @@ function Navbar() {
           text={"Apply To Participate"}
           size={"large"}
           type={"button"}
+          className="!text-sm 2xs:!text-[17.2px]"
         />
       </a>
 

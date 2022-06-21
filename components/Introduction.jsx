@@ -36,7 +36,7 @@ function Introduction() {
               text="Apply To Participate"
               size="large"
               type="button"
-              className="!w-full md:!w-max !text-[18.15px] !leading-[24px] !py-[15.5px] !px-[18.6px] md:!text-[17.2px] md:!leading-[21px] md:!py-[13.25px] md:!px-[15.9px] md:min-w-[min-content]"
+              className="!w-full md:!w-max !text-sm 2xs:!text-[18.15px] !leading-[24px] !py-[15.5px] !px-[18.6px] md:!text-[17.2px] md:!leading-[21px] md:!py-[13.25px] md:!px-[15.9px] md:min-w-[min-content]"
             />
 
           </a>

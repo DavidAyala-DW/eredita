@@ -151,7 +151,7 @@ function SunCollection() {
             />
           </div>
 
-          <div className="hidden md:block max-w-[calc(77%)] h-full relative">
+          <div className="hidden lg:block max-w-[calc(100%)] h-full relative">
             <Image
               src={activeProduct.desktop_image}
               layout="responsive"
@@ -161,11 +161,11 @@ function SunCollection() {
           </div>
 
           <div className="
-          bg-white lg:px-5 space-x-10  justify-center md:rounded-[10px] bottom-0 inset-x-0
-            md:justify-center md:bottom-0 absolute md:max-w-[35.4%]
-            md:h-full md:max-h-[195px] overflow-y-hidden h-max w-full flex md:space-x-2.5 overflow-hidden
-            md:flex-col md:items-center md:py-0 md:shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)]
-            md:top-[calc(5vw*0.5)] lg:top-[20%] xl:top-[27%] lg:max-h-[231px]  md:right-6 md:left-auto
+          bg-white lg:px-5  md:py-0 space-x-10  justify-center lg:rounded-[10px] bottom-0 inset-x-0
+            md:justify-center md:bottom-0 absolute md:max-w-full lg:max-w-[35.4%]
+            md:max-h-[129px] lg:h-full lg:max-h-[230px] overflow-y-hidden h-max w-full flex md:space-x-2.5 overflow-hidden
+            lg:flex-col lg:items-center lg:py-0 lg:shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)]
+            lg:top-[20%] lg:right-6 lg:left-auto md:!hidden
             "
           >
 
@@ -182,7 +182,6 @@ function SunCollection() {
 
             <div className="flex flex-col justify-center items-center lg:-translate-y-11 lg:space-y-5">
               <p className="leading-12 text-center capitalize">{activeProduct.title}</p>        
-              <p className="font-bold">{`$${Number(activeProduct.price).toFixed(2)}`}</p>        
             </div>
 
 

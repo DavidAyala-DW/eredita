@@ -10,7 +10,7 @@ function Opportunity() {
 
     <section className="px-5 md:px-0 md:max-w-[85%] mx-auto w-full flex flex-col">
 
-      <h2 className="text-primary text-center uppercase font-black text-[24px] sm:text-[32px] leading-[38px] tracking-[.145em] mb-20">
+      <h2 className="text-primary text-center uppercase font-black text-[24px] sm:text-[32px] leading-[29px] md:leading-[38px] tracking-[.145em] mb-20">
         The opportunity in numbers
       </h2>
       
@@ -28,7 +28,7 @@ function Opportunity() {
             </div>
           </div>
 
-          <div className="max-w-[251px] text-center leading-5 tracking-[.145em] uppercase font-semibold">
+          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold">
             700,000-1M+ potential impressions (audience members)
           </div>
 
@@ -42,7 +42,7 @@ function Opportunity() {
             </div>
           </div>
 
-          <div className="max-w-[251px] text-center leading-5 tracking-[.145em] uppercase font-semibold">
+          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold">
             30 second primetime Ads played on 150+ theatre screens Canada-wide
           </div>
 
@@ -57,7 +57,7 @@ function Opportunity() {
           </div>
 
 
-          <div className="max-w-[251px] text-center leading-5 tracking-[.145em] uppercase font-semibold">
+          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold">
             700 Bullet Train screenings PER DAY Canada-wide
           </div>
 
@@ -71,7 +71,7 @@ function Opportunity() {
             </div>
           </div>
 
-          <div className="max-w-[251px] text-center leading-5 tracking-[.145em] uppercase font-semibold">
+          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold">
             Residual and concurrent advertisements post-show in select malls and retail locations across Canada
           </div>
 

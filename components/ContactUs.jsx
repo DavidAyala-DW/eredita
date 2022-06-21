@@ -11,7 +11,7 @@ function ContactUs() {
 
     <section className="py-[45px] px-[26px] w-full lg:px-[7.5%] bg-[#F7F7FB] flex flex-col">
 
-      <h2 className="text-primary text-[32px] uppercase text-center leading-[38px] tracking-[.145em] mb-10 font-black">Contact us</h2>
+      <h2 className="text-primary text-2xl md:text-[32px] uppercase text-center leading-[29px] md:leading-[38px] tracking-[.145em] mb-10 font-black">Contact us</h2>
 
       <div className="grid grid-cols-1 md2:grid-cols-[48.4%_51.6%] w-full">
         
@@ -26,25 +26,25 @@ function ContactUs() {
           
         </div>
 
-        <div className="bg-white w-full h-max my-auto pt-5 lg:pt-[105px] pb-[25px]">
+        <div className="bg-white w-full h-max my-auto pt-[46px] lg:pt-[105px] pb-[53px]">
 
-          <div className="flex flex-col items-center lg:items-start lg:px-[75px] mb-[120px]">
+          <div className="flex flex-col md:items-center lg:items-start px-2 lg:px-[75px] mb-10 md:mb-[120px]">
 
-            <h3 className="text-primary text-center uppercase text-[32px] font-black tracking-[.145em] leading-[38px] mb-10">
+            <h3 className="text-primary md:text-center uppercase text-[22px] md:text-[32px] font-black tracking-[.145em] leading-[29px] md:leading-[38px] mb-10">
               Join The Promotion!
             </h3>
 
-            <p className="max-w-[471px] text-center lg:text-left w-full text-lg font-normal leading-[30px] text-[#6F6C90] mb-10">
+            <p className="max-w-[471px] md:text-center lg:text-left w-full text-lg font-normal leading-[30px] text-[#6F6C90] mb-10">
               Don’t miss your chance to be a part of this summer’s blockbuster hit, and gain nationwide exposure!
             </p>
 
-            <a href="https://ereditaeyewear.com/products/police-x-bullet-train" className="block">
+            <a href="https://ereditaeyewear.com/products/police-x-bullet-train" className="block max-w-full">
               <Button
                 text="Apply To Participate"
                 color={"primary"}
                 size="large"
                 type="button"
-                className="min-w-[220px] lg:min-w-[363px]"
+                className="!text-sm 2xs:!text-[17.2px] !w-full"
               />
             </a>
 
@@ -80,11 +80,7 @@ function ContactUs() {
               />
             </div>
           </div>
-
-          
-
-
-
+        
         </div>
 
       </div>

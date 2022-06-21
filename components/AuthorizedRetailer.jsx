@@ -9,7 +9,7 @@ function AuthorizedRetailer() {
     
     <section className="px-5 md:px-0 md:max-w-[85%] mx-auto w-full flex flex-col mb-[82px]">
 
-      <h2 className="text-center text-primary text-[32px] leading-9 tracking-[.145em] uppercase font-black mb-4">
+      <h2 className="text-center text-primary text-2xl md:text-[32px] leading-[29px] md:leading-9 tracking-[.145em] uppercase font-black mb-4">
         To become an authorized retailer
       </h2>
 

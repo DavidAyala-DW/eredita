@@ -4,7 +4,7 @@ import {Navigation} from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-import Glass from "../public/glass.svg";
+import Button from "../components/UI/Button";
 
 import Number1 from "../public/1.png";
 import Number2 from "../public/2.png";
@@ -59,7 +59,7 @@ function HowItWorks() {
 
                 <div className="flex flex-start space-x-[18px]">
 
-                  <div className="w-[46px]">
+                  <div className="w-[23px] md:w-[46px]">
 
                     <Image
                       src={Number1}
@@ -77,7 +77,7 @@ function HowItWorks() {
 
                 <div className="flex flex-start space-x-[18px]">
 
-                  <div className="w-[46px]">
+                  <div className="w-[23px] md:w-[46px]">
 
                     <Image
                       src={Number2}
@@ -95,7 +95,7 @@ function HowItWorks() {
 
                 <div className="flex flex-start space-x-[18px]">
 
-                  <div className="w-[46px]">
+                  <div className="w-[23px] md:w-[46px]">
 
                     <Image
                       src={Number3}
@@ -124,7 +124,7 @@ function HowItWorks() {
 
                 <div className="flex flex-start space-x-[18px]">
 
-                  <div className="w-[46px]">
+                  <div className="w-[23px] md:w-[46px]">
 
                     <Image
                       src={Number4}
@@ -142,7 +142,7 @@ function HowItWorks() {
 
                 <div className="flex flex-start space-x-[18px]">
 
-                  <div className="w-[46px]">
+                  <div className="w-[23px] md:w-[46px]">
 
                     <Image
                       src={Number5}
@@ -157,6 +157,16 @@ function HowItWorks() {
                   </p>
                   
                 </div>
+
+                <a href="https://ereditaeyewear.com/products/police-x-bullet-train" className="block max-w-full">
+                  <Button
+                    text="Apply To Participate"
+                    color={"primary"}
+                    size="large"
+                    type="button"
+                    className="!text-sm 2xs:!text-[19px] md:!text-[17.2px] !w-full"
+                  />
+                </a>
 
               </div>
 
