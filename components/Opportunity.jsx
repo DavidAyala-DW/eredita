@@ -10,11 +10,11 @@ function Opportunity() {
 
     <section className="px-5 md:px-0 md:max-w-[85%] mx-auto w-full flex flex-col">
 
-      <h2 className="text-primary text-center uppercase font-black text-[24px] sm:text-[32px] leading-[29px] md:leading-[38px] tracking-[.145em] mb-20">
+      <h2 className="text-primary text-center uppercase font-black text-[24px] sm:text-[32px] leading-[29px] md:leading-[38px] tracking-[.145em] mb-5">
         WHAT’S IN IT FOR YOU?
       </h2>
       
-      <p className="mb-20 hidden text-primary text-center tracking-[.145em] font-black">
+      <p className="mb-20 text-primary text-center tracking-[.145em] font-black">
         The Opportunity In Numbers
       </p>
 
