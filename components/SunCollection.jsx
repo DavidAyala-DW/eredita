@@ -142,11 +142,12 @@ function SunCollection() {
 
         <div className="w-full h-[calc(100vw)] md:h-auto block relative border border-black">
 
-          <div className="block lg:hidden">
+          <div className="block lg:hidden max-h-full">
             <Image
               src={activeProduct.mobile_image}
-              layout="responsive"
-              className="object-center oject-cover"
+              quality={100}
+              layout="fill"
+              className="object-center object-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
           </div>
@@ -154,8 +155,9 @@ function SunCollection() {
           <div className="hidden lg:block max-w-[calc(100%)] h-full relative">
             <Image
               src={activeProduct.desktop_image}
-              layout="responsive"
-              className="object-center oject-cover"
+              quality={100}
+              layout="fill"
+              className="object-center object-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
           </div>
@@ -225,7 +227,7 @@ function SunCollection() {
 
                       </div>
 
-                      <p className="text-center text-lg font-semibold leading-[48px] text-[rgba(0,_0,_0,_0.87)]">
+                      <p className={`text-center text-sm xl:text-lg font-semibold leading-[1]  text-[rgba(0,_0,_0,_0.87)]`}>
                           {product.title}
                       </p>
 
@@ -262,7 +264,7 @@ function SunCollection() {
 
                       </div>
 
-                      <p className="text-center text-lg font-semibold leading-[48px] text-[rgba(0,_0,_0,_0.87)]">
+                      <p className={`text-center text-sm xl:text-lg font-semibold leading-[1] text-[rgba(0,_0,_0,_0.87)]`}>
                           {product.title}
                       </p>
 

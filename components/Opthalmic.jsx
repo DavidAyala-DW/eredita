@@ -161,8 +161,8 @@ function Opthalmic() {
           <div className="block lg:hidden">
             <Image
               src={activeProduct.mobile_image}
-              layout="responsive"
-              className="object-center oject-cover"
+              layout="fill"
+              className="object-center object-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
           </div>
@@ -170,8 +170,8 @@ function Opthalmic() {
           <div className="hidden lg:block max-w-[calc(100%)] h-full relative">
             <Image
               src={activeProduct.desktop_image}
-              layout="responsive"
-              className="object-center oject-cover"
+              layout="fill"
+              className="object-center object-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
           </div>
@@ -243,7 +243,7 @@ function Opthalmic() {
                         />
                       </div>
 
-                      <p className="text-center text-lg font-semibold leading-[48px] text-[rgba(0,_0,_0,_0.87)]">
+                      <p className={`text-center text-sm xl:text-lg font-semibold leading-[1]  text-[rgba(0,_0,_0,_0.87)]`}>
                         {product.title}
                       </p>
 
@@ -278,7 +278,7 @@ function Opthalmic() {
                         />
                       </div>
 
-                      <p className="text-center text-lg font-semibold leading-[48px] text-[rgba(0,_0,_0,_0.87)]">
+                      <p className={`text-center text-sm xl:text-lg font-semibold leading-[1]  text-[rgba(0,_0,_0,_0.87)]`}>
                         {product.title}
                       </p>
 
