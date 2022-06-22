@@ -24,6 +24,10 @@ const data = {
     {
       question: "Why are you only accepting credit cards for this promotion?",
       answer: "Due to the fast moving and time-sensitive nature of this promotion, we are securing payment via credit card.  Should you wish to have an ongoing credit facility, our Accounts Receivable team will be happy to work with you going forward."
+    },
+    {
+      question: "I’m a member of an optical group, do I have to pay by credit card and will I receive my discount?",
+      answer: "Eredita Eyewear partners with The Optical Group, Regard Action and Digital ECP. If you are a member of any of these groups, your credit card will be billed $300 to reserve your space, with the remainder of the amount billed through your group, at the prevailing discount agreed. Those not with one of the above groups will be billed exclusively via credit card - discounts will not be available. You may consider joining The Independent Network to receive consolidated billing, discounts and other value-adds for minimal costs. Email us at info@theindependentnetwork.ca for more information!"
     }
 
   ],
@@ -37,7 +41,7 @@ const data = {
       
     {
       question: "Can I return product that does not sell?",
-      answer: "Yes, however due to the extended ad campaign associated with this initiative, we strongly encourage to retain the product on the board for at least 6 months before any return decisions are made."
+      answer: "Yes, however due to the extended ad campaign associated with this initiative, we strongly encourage to retain the product on the board for at least 6 months before any return decisions are made. Change answer to: “We are happy to offer an exchange of product for alternate SKUs within the Police collection, however, we strongly encourage to retain the product on the board for at least 6 months before any exchange decisions are made, in order to fully capitalize on the extended marketing campaign available. Your sales team can assist with this when convenient."
     },
   
     {
