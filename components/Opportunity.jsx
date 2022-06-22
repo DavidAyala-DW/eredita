@@ -28,7 +28,7 @@ function Opportunity() {
             </div>
           </div>
 
-          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold">
+          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold px-2 1.5xl:px-0">
             700,000-1M+ potential impressions (audience members)
           </div>
 
@@ -42,7 +42,7 @@ function Opportunity() {
             </div>
           </div>
 
-          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold">
+          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold px-2 1.5xl:px-0">
             30 second primetime Ads played on 150+ theatre screens Canada-wide
           </div>
 
@@ -57,7 +57,7 @@ function Opportunity() {
           </div>
 
 
-          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold">
+          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold px-2 1.5xl:px-0">
             700 Bullet Train screenings PER DAY Canada-wide
           </div>
 
@@ -71,7 +71,7 @@ function Opportunity() {
             </div>
           </div>
 
-          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold">
+          <div className="max-w-[315px] text-base leading-[19px] md:max-w-[251px] text-center  md:leading-5 tracking-[.145em] uppercase font-semibold px-2 1.5xl:px-0">
             Residual and concurrent advertisements post-show in select malls and retail locations across Canada
           </div>
 

@@ -186,7 +186,7 @@ function Opthalmic() {
             </div>    
 
             <div className="flex flex-col justify-center items-center lg:-translate-y-11 lg:space-y-5">
-              <p className="leading-12 text-center capitalize">{activeProduct.title}</p>        
+              <p className="leading-12 text-center uppercase">{activeProduct.title}</p>        
               {/* <p className="font-bold">{`$${Number(activeProduct.price).toFixed(2)}`}</p>         */}
             </div>
 
@@ -200,6 +200,7 @@ function Opthalmic() {
           <Swiper
             modules={[Navigation]}
             allowTouchMove={false}
+            spaceBetween={10}
             slidesPerView={1}
             loop={true}
             navigation={{
@@ -232,7 +233,7 @@ function Opthalmic() {
                         />
                       </div>
 
-                      <p className={`text-center text-sm xl:text-lg font-semibold leading-[1]  text-[rgba(0,_0,_0,_0.87)]`}>
+                      <p className={`text-center uppercase text-sm xl:text-lg font-semibold leading-[1]  text-[rgba(0,_0,_0,_0.87)]`}>
                         {product.title}
                       </p>
 
@@ -267,7 +268,7 @@ function Opthalmic() {
                         />
                       </div>
 
-                      <p className={`text-center text-sm xl:text-lg font-semibold leading-[1]  text-[rgba(0,_0,_0,_0.87)]`}>
+                      <p className={`text-center uppercase text-sm xl:text-lg font-semibold leading-[1]  text-[rgba(0,_0,_0,_0.87)]`}>
                         {product.title}
                       </p>
 
