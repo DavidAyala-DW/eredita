@@ -46,7 +46,7 @@ const products = [
 
   {
     url: Opt7,
-    title:"Tortoise w Gold",
+    title:"VPLD07",
     price: 700.00,
     desktop_image: Opt7Main ,
     mobile_image: Opt7Main ,
@@ -55,7 +55,7 @@ const products = [
 
   {
     url: Opt8,
-    title:"Blue striped",
+    title:"VPLE36",
     price: 700.00,
     desktop_image: Opt8Main ,
     mobile_image: Opt8Main ,
@@ -64,7 +64,7 @@ const products = [
 
   {
     url: Opt9,
-    title:"Shiny Black",
+    title:"VPLE37",
     price: 700.00,
     desktop_image: Opt9Main ,
     mobile_image: Opt9Main ,
@@ -72,7 +72,7 @@ const products = [
   },  
   {
     url: Opt5,
-    title:"Shiny Black w Gold",
+    title:"VPLC52",
     price: 700.00,
     desktop_image: Opt5Main ,
     mobile_image: Opt5Main ,
@@ -80,7 +80,7 @@ const products = [
   },
   {
     url: Opt2,
-    title:"Shiny Black w Gold",
+    title:"VPLA49",
     price: 700.00,
     desktop_image: Opt2Main ,
     mobile_image: Opt2Main ,
@@ -88,7 +88,7 @@ const products = [
   },
   {
     url: Opt1,
-    title:"Tortoise",
+    title:"VPLA42",
     price: 700.00,
     desktop_image: Opt1Main ,
     mobile_image: Opt1Main ,
@@ -97,7 +97,7 @@ const products = [
 
   {
     url: Opt3,
-    title:"Shiny  Black w Gold",
+    title:"VPLB31",
     price: 700.00,
     desktop_image: Opt3Main ,
     mobile_image: Opt3Main ,
@@ -106,7 +106,7 @@ const products = [
 
   {
     url: Opt4,
-    title:"Shiny Black",
+    title:"VPLB56",
     price: 700.00,
     desktop_image: Opt4Main ,
     mobile_image: Opt4Main ,
@@ -115,7 +115,7 @@ const products = [
 
   {
     url: Opt6,
-    title:"Navy Blue",
+    title:"VPLD06",
     price: 700.00,
     desktop_image: Opt6Main ,
     mobile_image: Opt6Main ,
@@ -151,7 +151,7 @@ function Opthalmic() {
             <Image
               src={activeProduct.mobile_image}
               layout="fill"
-              className="object-center object-cover"
+              className="object-center object-contain"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
           </div>
@@ -159,7 +159,7 @@ function Opthalmic() {
           <div className="hidden lg:block max-w-[calc(100%)] h-full relative">
             <Image
               src={activeProduct.desktop_image}
-              layout="responsive"
+              layout="fill"
               className="object-center object-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
@@ -222,7 +222,7 @@ function Opthalmic() {
                     
                     <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full relative flex flex-col space-y-5">
 
-                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-[58%] sm:h-[210px] md:h-[90px] lg:h-[120px] xl:h-[155px] overflow-hidden">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)]">
                         <Image
                           src={product.url}
                           alt={product.url}
@@ -257,7 +257,7 @@ function Opthalmic() {
                     
                     <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full flex flex-col space-y-5 relative">
 
-                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-[58%] sm:h-[210px] md:h-[90px] lg:h-[120px] xl:h-[155px] overflow-hidden">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)]">
                         <Image
                           src={product.url}
                           alt={product.url}

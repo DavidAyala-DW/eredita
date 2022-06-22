@@ -41,7 +41,7 @@ const products = [
 
   {
     url: Sun5,
-    title:"Tortoise",
+    title:"SPLB40N",
     price: 740.00,
     desktop_image: Sun5Main,
     mobile_image: Sun5Main,
@@ -49,7 +49,7 @@ const products = [
   },
   {
     url: Sun6,
-    title:"Shiny Black",
+    title:"SPLE06",
     price: 750.00,
     desktop_image: Sun6Main,
     mobile_image: Sun6Main,
@@ -57,7 +57,7 @@ const products = [
   },
   {
     url: Sun7,
-    title:"Dark Havana",
+    title:"SPLE37",
     price: 750.00,
     desktop_image: Sun7Main,
     mobile_image: Sun7Main,
@@ -73,7 +73,7 @@ const products = [
   },
   {
     url: Sun3,
-    title:"Gunmetal",
+    title:"SPLB28",
     price: 720.00,
     desktop_image: Sun3Main,
     mobile_image: Sun3Main,
@@ -81,7 +81,7 @@ const products = [
   },
   {
     url: Sun1,
-    title:"Shiny Black w Gold",
+    title:"spl995",
     price: 700.00,
     desktop_image: Sun1Main,
     mobile_image: Sun1Main,
@@ -97,7 +97,7 @@ const products = [
   },
   {
     url: Sun4,
-    title:"Shiny Black w Gold",
+    title:"SPLB32",
     price: 730.00,
     desktop_image: Sun4Main,
     mobile_image: Sun4Main,
@@ -134,7 +134,7 @@ function SunCollection() {
               src={activeProduct.mobile_image}
               quality={100}
               layout="fill"
-              className="object-center object-cover"
+              className="object-center object-contain"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
           </div>
@@ -143,7 +143,7 @@ function SunCollection() {
             <Image
               src={activeProduct.desktop_image}
               quality={100}
-              layout="responsive"
+              layout="fill"
               className="object-center object-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
@@ -202,7 +202,7 @@ function SunCollection() {
                     
                     <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full  relative flex flex-col space-y-5">
 
-                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] w-full h-[58%] sm:h-[210px] md:h-[90px] lg:h-[120px] xl:h-[155px] overflow-hidden">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] w-full">
 
                         <Image
                           src={product.url}
@@ -238,7 +238,7 @@ function SunCollection() {
                     
                     <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full relative flex flex-col space-y-5">
 
-                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] w-full h-[58%] sm:h-[210px] md:h-[90px] lg:h-[120px] xl:h-[155px] overflow-hidden">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] w-full">
 
                         <Image
                           src={product.url}
