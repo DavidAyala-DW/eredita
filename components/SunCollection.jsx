@@ -48,70 +48,70 @@ const products = [
 
   {
     url: Sun1,
-    title:"SPL872V",
+    title:"Shiny Black",
     price: 700.00,
     desktop_image: Sun1Main,
     mobile_image: Sun1Main
   },
   {
     url: Sun2,
-    title:"SPL995",
+    title:"Shiny Black w Gold",
     price: 710.00,
     desktop_image: Sun2Main,
     mobile_image: Sun2Main
   },
   {
     url: Sun3,
-    title:"SPLE37-1",
+    title:"Shiny Black",
     price: 720.00,
     desktop_image: Sun3Main,
     mobile_image: Sun3Main
   },
   {
     url: Sun4,
-    title:"SPLE37-2",
+    title:"Dark Havana",
     price: 730.00,
     desktop_image: Sun4Main,
     mobile_image: Sun4Main
   },
   {
     url: Sun5,
-    title:"SPLE37-3",
+    title:"Black/Smoke",
     price: 740.00,
     desktop_image: Sun5Main,
     mobile_image: Sun5Main
   },
   {
     url: Sun6,
-    title:"SPLE37-4",
+    title:"Blue Smoke",
     price: 750.00,
     desktop_image: Sun6Main,
     mobile_image: Sun6Main
   },
   {
     url: Sun7,
-    title:"SPLB28",
+    title:"Gunmetal",
     price: 750.00,
     desktop_image: Sun7Main,
     mobile_image: Sun7Main
   },
   {
     url: Sun8,
-    title:"SPLB32",
+    title:"Shiny Black w Gold",
     price: 740.00,
     desktop_image: Sun8Main,
     mobile_image: Sun8Main
   },
   {
     url: Sun9,
-    title:"SPLB40N",
+    title:"Tortoise",
     price: 730.00,
     desktop_image: Sun9Main,
     mobile_image: Sun9Main
   },
   {
     url: Sun10,
-    title:"SPLE06",
+    title:"Shiny Black",
     price: 720.00,
     desktop_image: Sun10Main,
     mobile_image: Sun10Main

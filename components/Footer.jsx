@@ -22,9 +22,9 @@ function Footer() {
 
             <div className="flex space-y-[10px] flex-col mb-[50px] text-lg md:text-[15px] leading-[35px] md:leading-[1.65] font-normal">
               
-              <p>sales@ereditaeyewear.com</p>
-              <p>orders@ereditaeyewear.com</p>
-              <p>1-855-793-EYES </p>
+              <a target="_blank" rel="noopener noreferrer" href="mailto:sales@ereditaeyewear.com" title="mailto:sales@ereditaeyewear.com">sales@ereditaeyewear.com</a>
+              <a target="_blank" rel="noopener noreferrer" href="mailto:orders@ereditaeyewear.com" title="mailto:orders@ereditaeyewear.com">orders@ereditaeyewear.com</a>
+              <a target="_blank" rel="noopener noreferrer" href="tel:1-855-793-3937" title="tel:1-855-793-3937">1-855-793-EYES </a>
 
             </div>
 

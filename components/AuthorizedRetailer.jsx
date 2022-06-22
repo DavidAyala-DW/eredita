@@ -49,7 +49,7 @@ function AuthorizedRetailer() {
                   </div>
 
                   <p className="text-sm md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
-                    12 pcs “Bullet Train” Ophthalmic + Sun selection (multiple colours, 1 frame complimentary)
+                    12 pcs “Bullet Train” Ophthalmic + Sun selection (multiple colours, 1 frame complimentary).
                   </p>
                   
                 </div>
@@ -61,7 +61,7 @@ function AuthorizedRetailer() {
                   </div>
 
                   <p className="text-sm md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
-                    12 pcs “Police Lifestyle” selection (our top sellers)
+                    12 pcs “Police Lifestyle” selection (our top sellers).
                   </p>
                   
                 </div>
@@ -73,7 +73,7 @@ function AuthorizedRetailer() {
                   </div>
 
                   <p className="text-sm md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
-                    30/60 payment terms, payable via credit card
+                    30/60 payment terms, payable via credit card.
                   </p>
                   
                 </div>
@@ -85,7 +85,7 @@ function AuthorizedRetailer() {
                   </div>
 
                   <p className="text-sm md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
-                    Point of Purchase (POP) materials, including a plaque and Police Eyewear branded counter card based on availability and logistics timing.
+                    Point of Purchase (POP) materials, including a plaque and Police Eyewear branded counter card, based on availability and logistics timing.
                   </p>
                   
                 </div>

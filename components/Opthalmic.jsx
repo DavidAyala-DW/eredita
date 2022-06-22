@@ -46,7 +46,7 @@ const products = [
 
   {
     url: Opt1,
-    title:"VPLB31",
+    title:"Shiny Black w Gold",
     price: 700.00,
     desktop_image: Opt1Main ,
     mobile_image: Opt1Main 
@@ -54,7 +54,7 @@ const products = [
 
   {
     url: Opt2,
-    title:"VPLA49",
+    title:"Shiny Black w Gold",
     price: 700.00,
     desktop_image: Opt2Main ,
     mobile_image: Opt2Main 
@@ -62,7 +62,7 @@ const products = [
 
   {
     url: Opt3,
-    title:"VPLA36-1",
+    title:"???",
     price: 700.00,
     desktop_image: Opt3Main ,
     mobile_image: Opt3Main 
@@ -70,7 +70,7 @@ const products = [
 
   {
     url: Opt4,
-    title:"VPLA-42",
+    title:"Tortoise",
     price: 700.00,
     desktop_image: Opt4Main ,
     mobile_image: Opt4Main 
@@ -78,7 +78,7 @@ const products = [
 
   {
     url: Opt5,
-    title:"VPLA49",
+    title:"Shiny Black w Gold",
     price: 700.00,
     desktop_image: Opt5Main ,
     mobile_image: Opt5Main 
@@ -86,7 +86,7 @@ const products = [
 
   {
     url: Opt6,
-    title:"VPLB31",
+    title:"Shiny Black w Gold",
     price: 700.00,
     desktop_image: Opt6Main ,
     mobile_image: Opt6Main 
@@ -94,7 +94,7 @@ const products = [
 
   {
     url: Opt7,
-    title:"VPLB56",
+    title:"Shiny Black",
     price: 700.00,
     desktop_image: Opt7Main ,
     mobile_image: Opt7Main 
@@ -102,7 +102,7 @@ const products = [
 
   {
     url: Opt8,
-    title:"VPLC52",
+    title:"Shiny Black w Gold",
     price: 700.00,
     desktop_image: Opt8Main ,
     mobile_image: Opt8Main 
@@ -110,7 +110,7 @@ const products = [
 
   {
     url: Opt9,
-    title:"VPLD06",
+    title:"Navy Blue",
     price: 700.00,
     desktop_image: Opt9Main ,
     mobile_image: Opt9Main 
@@ -118,7 +118,7 @@ const products = [
 
   {
     url: Opt10,
-    title:"VPLD07",
+    title:"Tortoise w Gold",
     price: 700.00,
     desktop_image: Opt10Main ,
     mobile_image: Opt10Main 
@@ -126,7 +126,7 @@ const products = [
 
   {
     url: Opt11,
-    title:"VPLE36",
+    title:"Blue striped",
     price: 700.00,
     desktop_image: Opt11Main ,
     mobile_image: Opt11Main 
