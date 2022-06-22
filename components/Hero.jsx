@@ -2,8 +2,8 @@ import React from 'react'
 import Image from "next/image";
 import HeroArrow from "../public/hero_arrow.svg";
 import Button from './UI/Button';
-import HeroBanner from "../public/hero-bg.webp"
-import HeroMain from "../public/Eredità-Cineplex_Hero.webp";
+import HeroBanner from "../public/ezgif.com-gif-maker.jpg"
+import HeroMain from "../public/ezgif.com-gif-maker2.webp";
 
 function Hero() {
 

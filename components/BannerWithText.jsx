@@ -26,7 +26,7 @@ function BannerWithText() {
 
           <div className="h-max px-6 max-w-max text-white flex flex-col z-[10]">
 
-            <h2 className="font-starduster text-center max-w-[971px] mx-auto text-[30px] sm:text-[32px] md:text-[38px] lg:text-[50px] xl:text-[60px] italic leading-[20px] sm:leading-[32px] md:leading-[48px] lg:leading-[56px] tracking-[-0.1em] mb-[45px] md:mb-[25px]">
+            <h2 className="font-starduster text-center max-w-[971px] mx-auto text-[30px] sm:text-[32px] md:text-[38px] lg:text-[50px] xl:text-[60px] italic leading-[28px] md:leading-[56px] tracking-[-0.1em] mb-[45px] md:mb-[25px]">
               Team up with eredità & cineplex as an authorized retailer!
             </h2>
           
