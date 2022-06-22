@@ -145,7 +145,7 @@ function SunCollection() {
           <div className="block lg:hidden">
             <Image
               src={activeProduct.mobile_image}
-              layout="fill"
+              layout="responsive"
               className="object-center oject-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
@@ -154,7 +154,7 @@ function SunCollection() {
           <div className="hidden lg:block max-w-[calc(100%)] h-full relative">
             <Image
               src={activeProduct.desktop_image}
-              layout="fill"
+              layout="responsive"
               className="object-center oject-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />

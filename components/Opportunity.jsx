@@ -22,8 +22,8 @@ function Opportunity() {
 
         <div className="flex flex-col space-y-9 pb-8 items-center bg-white shadow-[0px_1.7571px_5.2713px_rgba(151,_172,_198,_0.25)]">
 
-          <div className="flex flex-col justify-center -mt-10 items-center border-[3px] border-dashed border-[#E9EAF0] h-[144px] w-[144px] rounded-full">
-            <div className="flex flex-col transform items-center justify-center bg-primary h-[126px] w-[126px] rounded-full">
+          <div className="flex flex-col justify-center -mt-10 items-center border-[3px] border-dashed border-[#E9EAF0] w-[181px] h-[181px] md:h-[144px] md:w-[144px] rounded-full">
+            <div className="flex flex-col transform items-center justify-center bg-primary h-[158px] w-[158px] md:h-[126px] md:w-[126px] rounded-full">
               <Audience/>
             </div>
           </div>
@@ -36,8 +36,8 @@ function Opportunity() {
 
         <div className="flex flex-col space-y-9 pb-8 items-center bg-white shadow-[0px_1.7571px_5.2713px_rgba(151,_172,_198,_0.25)]">
 
-          <div className="flex flex-col justify-center -mt-10 items-center border-[3px] border-dashed border-[#E9EAF0] h-[144px] w-[144px] rounded-full">
-            <div className="flex flex-col transform items-center justify-center bg-primary h-[126px] w-[126px] rounded-full">
+          <div className="flex flex-col justify-center -mt-10 items-center border-[3px] border-dashed border-[#E9EAF0] w-[181px] h-[181px] md:h-[144px] md:w-[144px] rounded-full">
+            <div className="flex flex-col transform items-center justify-center bg-primary h-[158px] w-[158px] md:h-[126px] md:w-[126px] rounded-full">
               <Advertiser/>
             </div>
           </div>
@@ -50,8 +50,8 @@ function Opportunity() {
 
         <div className="flex flex-col space-y-9 pb-8 items-center bg-white shadow-[0px_1.7571px_5.2713px_rgba(151,_172,_198,_0.25)]">
 
-          <div className="flex flex-col justify-center -mt-10 items-center border-[3px] border-dashed border-[#E9EAF0] h-[144px] w-[144px] rounded-full">
-            <div className="flex flex-col transform items-center justify-center bg-primary h-[126px] w-[126px] rounded-full">
+          <div className="flex flex-col justify-center -mt-10 items-center border-[3px] border-dashed border-[#E9EAF0] w-[181px] h-[181px] md:h-[144px] md:w-[144px] rounded-full">
+            <div className="flex flex-col transform items-center justify-center bg-primary h-[158px] w-[158px] md:h-[126px] md:w-[126px] rounded-full">
               <Theater/>                
             </div>
           </div>
@@ -65,8 +65,8 @@ function Opportunity() {
 
         <div className="flex flex-col space-y-9 pb-8 items-center bg-white shadow-[0px_1.7571px_5.2713px_rgba(151,_172,_198,_0.25)]">
           
-          <div className="flex flex-col justify-center -mt-10 items-center border-[3px] border-dashed border-[#E9EAF0] h-[144px] w-[144px] rounded-full">
-            <div className="flex flex-col transform items-center justify-center bg-primary h-[126px] w-[126px] rounded-full">
+          <div className="flex flex-col justify-center -mt-10 items-center border-[3px] border-dashed border-[#E9EAF0] w-[181px] h-[181px] md:h-[144px] md:w-[144px] rounded-full">
+            <div className="flex flex-col transform items-center justify-center bg-primary h-[158px] w-[158px] md:h-[126px] md:w-[126px] rounded-full">
               <Canada/>
             </div>
           </div>

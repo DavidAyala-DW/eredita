@@ -9,9 +9,9 @@ import BulletTrain from "../public/bulletTrain.png"
 function ContactUs() {
   return (
 
-    <section className="py-[45px] px-[26px] w-full lg:px-[7.5%] bg-[#F7F7FB] flex flex-col">
-
-      <h2 className="text-primary text-2xl md:text-[32px] uppercase text-center leading-[29px] md:leading-[38px] tracking-[.145em] mb-10 font-black">Contact us</h2>
+      <>
+        <h2 className="text-primary text-2xl md:text-[32px] uppercase text-center leading-[29px] md:leading-[38px] tracking-[.145em] mb-10 font-black">Contact us</h2>
+            <section className="py-[45px] px-[26px] w-full lg:px-[7.5%] bg-[#F7F7FB] flex flex-col">
 
       <div className="grid grid-cols-1 md2:grid-cols-[48.4%_51.6%] w-full">
         
@@ -88,6 +88,7 @@ function ContactUs() {
 
 
     </section>
+      </>
 
   )
 }

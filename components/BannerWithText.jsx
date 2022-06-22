@@ -30,7 +30,7 @@ function BannerWithText() {
               Team up with eredità & cineplex as an authorized retailer!
             </h2>
           
-            <div className="text-center text-[18px] lg:text-2xl leading-7 max-w-[380px] md:max-w-[848px] mx-auto">
+            <div className="text-center text-[18px] lg:text-2xl leading-[22px] md:leading-7 max-w-[380px] md:max-w-[848px] mx-auto">
               Police Lifestyle frame <span className="font-bold">VPLE37</span> is featured & worn in the new summer action blockbuster “Bullet Train”, starring <span className="font-bold">Brad Pitt & Sandra Bullock!</span> Do you want your Optical shop to be listed as an authorized retailer of the star frames, and be seen by millions of movie fans all across the country? Learn more about the frames and your ultra exclusive opportunity below...
             </div>
 

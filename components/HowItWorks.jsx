@@ -69,7 +69,7 @@ function HowItWorks() {
                     
                   </div>
 
-                  <p className="text-sm w-full md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
+                  <p className="w-full font-semibold md:font-normal text-base lg:text-lg !leading-[22px] tracking-[.145em]">
                     A captive audience of theatregoers will be presented with a 30 second ad immediately prior to the start of the movie and post movie credits.
                   </p>
                   
@@ -87,7 +87,7 @@ function HowItWorks() {
 
                   </div>
 
-                  <p className="text-sm w-full md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
+                  <p className="w-full font-semibold md:font-normal text-base lg:text-lg !leading-[22px] tracking-[.145em]">
                     Our 30 second dynamic Ad features the specific frame used in the movie, along with details on the Bullet Train collection.  The Ad is accompanied by a QR code that, when scanned, directs audience members to our dedicated Bullet Train + Police Eyewear landing page. 
                   </p>
                   
@@ -105,7 +105,7 @@ function HowItWorks() {
 
                   </div>
 
-                  <p className="text-sm w-full md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
+                  <p className="w-full font-semibold md:font-normal text-base lg:text-lg !leading-[22px] tracking-[.145em]">
                     Landing page includes details on the frame, styles and Police eyewear background, and a call to action to purchase the frames in-store.
                   </p>
                   
@@ -134,7 +134,7 @@ function HowItWorks() {
                     
                   </div>
 
-                  <p className="text-sm w-full md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
+                  <p className="w-full font-semibold md:font-normal text-base lg:text-lg !leading-[22px] tracking-[.145em]">
                     Authorized retailers will be prominently featuredon geo-location map based on theatre location, directing prospective customers to your doorstep in all local markets.
                   </p>
                   
@@ -152,7 +152,7 @@ function HowItWorks() {
 
                   </div>
 
-                  <p className="text-sm w-full md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
+                  <p className="w-full font-semibold md:font-normal text-base lg:text-lg !leading-[22px] tracking-[.145em]">
                     Additionally, Cineplex will lead a direct mail campaign post-show to its Scene membership subscribers and all movie ticket holders.
                   </p>
                   

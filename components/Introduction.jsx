@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "next/image"
 import Button from './UI/Button'
 import Glass from "../public/VPLE371.webp"
+import Barcode from "../public/Trailer-QR-Code.jpg";
 
 function Introduction() {
 
@@ -54,7 +55,7 @@ function Introduction() {
 
           <div className="absolute hidden md:block bottom-0 right-0 w-full max-w-[17.8%]">
             <Image
-              src={"/barcode.png"}
+              src={Barcode}
               alt="barcode.png"
               layout="responsive"
               width={135}
@@ -84,7 +85,7 @@ function Introduction() {
 
         <div className="w-full md:hidden !mt-0 max-w-[168px] mx-auto">
             <Image
-              src={"/barcode.png"}
+              src={Barcode}
               alt="barcode.png"
               layout="responsive"
               width={135}

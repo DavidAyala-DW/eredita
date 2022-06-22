@@ -85,7 +85,7 @@ function AuthorizedRetailer() {
                   </div>
 
                   <p className="text-sm md:text-base lg:text-lg !leading-[22px] tracking-[.145em]">
-                    Point of Purchase (POP) materials, including a plaque and Police Eyewear branded counter card.
+                    Point of Purchase (POP) materials, including a plaque and Police Eyewear branded counter card based on availability and logistics timing.
                   </p>
                   
                 </div>
