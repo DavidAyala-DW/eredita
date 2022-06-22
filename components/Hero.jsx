@@ -24,7 +24,6 @@ function Hero() {
           alt="alt"
           layout='fill'
           priority={true}
-          quality={100}
           className="object-cover object-[68%] lg:object-center"
         />
 
@@ -42,7 +41,6 @@ function Hero() {
               alt="hero_main.webp"
               layout='responsive'
               priority={true}
-              quality={100}
             />
           </div>
 

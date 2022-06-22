@@ -233,7 +233,7 @@ function Opthalmic() {
                     
                     <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full relative flex flex-col space-y-5">
 
-                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-full">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-full max-h-[157px] overflow-hidden">
                         <Image
                           src={product.url}
                           alt={product.url}
@@ -268,7 +268,7 @@ function Opthalmic() {
                     
                     <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full flex flex-col space-y-5 relative">
 
-                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-full">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-full max-h-[157px] overflow-hidden">
                         <Image
                           src={product.url}
                           alt={product.url}
