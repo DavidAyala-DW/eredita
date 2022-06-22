@@ -5,32 +5,32 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 
-import Opt1 from "../public/opt1_front.png";
-import Opt1Main from "../public/opt1_main.png";
+import Opt1 from "../public/VPLA42_20550U81_01_1000x.jpg";
+import Opt1Main from "../public/VPLA42_20550U81_02_1000x.jpg";
 
-import Opt2 from "../public/opt2_front.png";
-import Opt2Main from "../public/opt2_main.png";
+import Opt2 from "../public/VPLA49_20550301_01_1000x.jpg";
+import Opt2Main from "../public/VPLA49_20550301_03_1000x.jpg";
 
-import Opt3 from "../public/opt3_front.png";
-import Opt3Main from "../public/opt3_main.png";
+import Opt3 from "../public/VPLB31_20530700_01_1000x.jpg";
+import Opt3Main from "../public/VPLB31_20530700_02_1000x.jpg";
 
-import Opt4 from "../public/opt4_front.png";
-import Opt4Main from "../public/opt4_main.png";
+import Opt4 from "../public/Police-VPLB56-0722.jpg";
+import Opt4Main from "../public/Cineplex-Product_Full_Size_0005s_0000_Police-VPLB56-0722.jpg";
 
-import Opt5 from "../public/opt5_front.png";
-import Opt5Main from "../public/opt5_main.png";
+import Opt5 from "../public/551689_1615304669061.jpg";
+import Opt5Main from "../public/VPLC52_20520BLK_03_1000x.jpg";
 
-import Opt6 from "../public/opt6_front.png";
-import Opt6Main from "../public/opt6_main.png";
+import Opt6 from "../public/579894_1638873089385.jpg";
+import Opt6Main from "../public/579894_1638873089385_FULL.jpg";
 
-import Opt7 from "../public/opt7_front.png";
-import Opt7Main from "../public/opt7_main.png";
+import Opt7 from "../public/VPLD07_20520752_01_1000x.jpg";
+import Opt7Main from "../public/VPLD07_20520752_03_1000x.jpg";
 
-import Opt8 from "../public/opt8_front.png";
-import Opt8Main from "../public/opt8_main.png";
+import Opt8 from "../public/VPLE36_20520700_01_1000x.jpg";
+import Opt8Main from "../public/VPLE36_20520700_03_1000x.jpg";
 
-import Opt9 from "../public/opt9_front.png";
-import Opt9Main from "../public/opt9_main.png";
+import Opt9 from "../public/VPLE37_20520700_01_1000x.jpg";
+import Opt9Main from "../public/VPLE37_20520700_03_1000x.jpg";
 
 import Opt10 from "../public/opt10_front.png";
 import Opt10Main from "../public/opt10_main.png";
@@ -45,93 +45,82 @@ import LeftArrow from "../public/left.svg";
 const products = [ 
 
   {
-    url: Opt1,
-    title:"Shiny Black w Gold",
+    url: Opt7,
+    title:"Tortoise w Gold",
     price: 700.00,
-    desktop_image: Opt1Main ,
-    mobile_image: Opt1Main 
+    desktop_image: Opt7Main ,
+    mobile_image: Opt7Main ,
+    type: "people"
   },
 
   {
-    url: Opt2,
-    title:"Shiny Black w Gold",
+    url: Opt8,
+    title:"Blue striped",
     price: 700.00,
-    desktop_image: Opt2Main ,
-    mobile_image: Opt2Main 
+    desktop_image: Opt8Main ,
+    mobile_image: Opt8Main ,
+    type: "people"
   },
 
   {
-    url: Opt3,
-    title:"???",
+    url: Opt9,
+    title:"Shiny Black",
     price: 700.00,
-    desktop_image: Opt3Main ,
-    mobile_image: Opt3Main 
-  },
-
-  {
-    url: Opt4,
-    title:"Tortoise",
-    price: 700.00,
-    desktop_image: Opt4Main ,
-    mobile_image: Opt4Main 
-  },
-
+    desktop_image: Opt9Main ,
+    mobile_image: Opt9Main ,
+    type: "people"
+  },  
   {
     url: Opt5,
     title:"Shiny Black w Gold",
     price: 700.00,
     desktop_image: Opt5Main ,
-    mobile_image: Opt5Main 
+    mobile_image: Opt5Main ,
+    type: "people"
+  },
+  {
+    url: Opt2,
+    title:"Shiny Black w Gold",
+    price: 700.00,
+    desktop_image: Opt2Main ,
+    mobile_image: Opt2Main ,
+    type: "people"
+  },
+  {
+    url: Opt1,
+    title:"Tortoise",
+    price: 700.00,
+    desktop_image: Opt1Main ,
+    mobile_image: Opt1Main ,
+    type: "glass"
+  },
+
+  {
+    url: Opt3,
+    title:"Shiny  Black w Gold",
+    price: 700.00,
+    desktop_image: Opt3Main ,
+    mobile_image: Opt3Main ,
+    type: "glass"
+  },
+
+  {
+    url: Opt4,
+    title:"Shiny Black",
+    price: 700.00,
+    desktop_image: Opt4Main ,
+    mobile_image: Opt4Main ,
+    type: "glass"
   },
 
   {
     url: Opt6,
-    title:"Shiny Black w Gold",
-    price: 700.00,
-    desktop_image: Opt6Main ,
-    mobile_image: Opt6Main 
-  },
-
-  {
-    url: Opt7,
-    title:"Shiny Black",
-    price: 700.00,
-    desktop_image: Opt7Main ,
-    mobile_image: Opt7Main 
-  },
-
-  {
-    url: Opt8,
-    title:"Shiny Black w Gold",
-    price: 700.00,
-    desktop_image: Opt8Main ,
-    mobile_image: Opt8Main 
-  },
-
-  {
-    url: Opt9,
     title:"Navy Blue",
     price: 700.00,
-    desktop_image: Opt9Main ,
-    mobile_image: Opt9Main 
+    desktop_image: Opt6Main ,
+    mobile_image: Opt6Main ,
+    type: "glass"
   },
-
-  {
-    url: Opt10,
-    title:"Tortoise w Gold",
-    price: 700.00,
-    desktop_image: Opt10Main ,
-    mobile_image: Opt10Main 
-  },
-
-  {
-    url: Opt11,
-    title:"Blue striped",
-    price: 700.00,
-    desktop_image: Opt11Main ,
-    mobile_image: Opt11Main 
-  },
-  
 
 ]
 
@@ -170,7 +159,7 @@ function Opthalmic() {
           <div className="hidden lg:block max-w-[calc(100%)] h-full relative">
             <Image
               src={activeProduct.desktop_image}
-              layout="fill"
+              layout="responsive"
               className="object-center object-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />

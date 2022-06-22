@@ -4,36 +4,29 @@ import {Navigation} from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
+import Sun1 from "../public/spl995-0301_t.jpg";
+import Sun1Main from "../public/spl995-0301.jpg";
 
-import Men from "../public/Sun-full.webp";
-import MenDesktop from "../public/SUN.webp";
+import Sun2 from "../public/SPL872V_20560700_01_1000x_t.jpg";
+import Sun2Main from "../public/SPL872V_20560700_02_1000x.jpg";
 
-import Women from "../public/Optical-full.webp";
-import WomenDesktop from "../public/Optical.webp"
+import Sun3 from "../public/splb28-0568.jpg";
+import Sun3Main from "../public/SPLB28_2056320F_03_1000x.jpg";
 
-import Sun1 from "../public/sun1_front.png";
-import Sun1Main from "../public/sun1_main.png";
+import Sun4 from "../public/141101134100_pp_1_MERCEDES_copy.jpg";
+import Sun4Main from "../public/141101134100_pp_2_MERCEDEScopy.jpg";
 
-import Sun2 from "../public/sun2_front.png";
-import Sun2Main from "../public/sun2_main.png";
+import Sun5 from "../public/SPLB40N_20560722_01_1000x.jpg";
+import Sun5Main from "../public/SPLB40N_20560722_03_1000x.jpg";
 
-import Sun3 from "../public/sun3_front.png";
-import Sun3Main from "../public/sun3_main.png";
+import Sun6 from "../public/SPLE06_2056700F_01_1000x.jpg";
+import Sun6Main from "../public/SPLE06_2056700F_03_1000x.jpg";
 
-import Sun4 from "../public/sun4_front.png";
-import Sun4Main from "../public/sun4_main.png";
+import Sun7 from "../public/SPLE37_2056700P_01_1000x.jpg";
+import Sun7Main from "../public/SPLE37_2056700P_03_1000x.jpg";
 
-import Sun5 from "../public/sun5_front.png";
-import Sun5Main from "../public/sun5_main.png";
-
-import Sun6 from "../public/sun6_front.png";
-import Sun6Main from "../public/sun6_main.png";
-
-import Sun7 from "../public/sun7_front.png";
-import Sun7Main from "../public/sun7_main.png";
-
-import Sun8 from "../public/sun8_front.png";
-import Sun8Main from "../public/sun8_main.png";
+import Sun8 from "../public/VPL958_20560531_01_1000x.jpg";
+import Sun8Main from "../public/Cineplex-Product_Full_Size_0009s_0000_VPL958_20560531_03_1000x.jpg";
 
 import Sun9 from "../public/sun9_front.png";
 import Sun9Main from "../public/sun9_main.png";
@@ -47,75 +40,69 @@ import LeftArrow from "../public/left.svg";
 const products = [ 
 
   {
-    url: Sun1,
-    title:"Shiny Black",
-    price: 700.00,
-    desktop_image: Sun1Main,
-    mobile_image: Sun1Main
-  },
-  {
-    url: Sun2,
-    title:"Shiny Black w Gold",
-    price: 710.00,
-    desktop_image: Sun2Main,
-    mobile_image: Sun2Main
-  },
-  {
-    url: Sun3,
-    title:"Shiny Black",
-    price: 720.00,
-    desktop_image: Sun3Main,
-    mobile_image: Sun3Main
-  },
-  {
-    url: Sun4,
-    title:"Dark Havana",
-    price: 730.00,
-    desktop_image: Sun4Main,
-    mobile_image: Sun4Main
-  },
-  {
     url: Sun5,
-    title:"Black/Smoke",
+    title:"Tortoise",
     price: 740.00,
     desktop_image: Sun5Main,
-    mobile_image: Sun5Main
+    mobile_image: Sun5Main,
+    type: "people"
   },
   {
     url: Sun6,
-    title:"Blue Smoke",
+    title:"Shiny Black",
     price: 750.00,
     desktop_image: Sun6Main,
-    mobile_image: Sun6Main
+    mobile_image: Sun6Main,
+    type: "people"
   },
   {
     url: Sun7,
-    title:"Gunmetal",
+    title:"Dark Havana",
     price: 750.00,
     desktop_image: Sun7Main,
-    mobile_image: Sun7Main
+    mobile_image: Sun7Main,
+    type: "people"
   },
   {
     url: Sun8,
-    title:"Shiny Black w Gold",
+    title:"VPL598",
     price: 740.00,
     desktop_image: Sun8Main,
-    mobile_image: Sun8Main
+    mobile_image: Sun8Main,
+    type: "people"
   },
   {
-    url: Sun9,
-    title:"Tortoise",
-    price: 730.00,
-    desktop_image: Sun9Main,
-    mobile_image: Sun9Main
-  },
-  {
-    url: Sun10,
-    title:"Shiny Black",
+    url: Sun3,
+    title:"Gunmetal",
     price: 720.00,
-    desktop_image: Sun10Main,
-    mobile_image: Sun10Main
-  }
+    desktop_image: Sun3Main,
+    mobile_image: Sun3Main,
+    type: "people"
+  },
+  {
+    url: Sun1,
+    title:"Shiny Black w Gold",
+    price: 700.00,
+    desktop_image: Sun1Main,
+    mobile_image: Sun1Main,
+    type: "glass"
+  },
+  {
+    url: Sun2,
+    title:"SPLA72",
+    price: 710.00,
+    desktop_image: Sun2Main,
+    mobile_image: Sun2Main,
+    type: "glass"
+  },
+  {
+    url: Sun4,
+    title:"Shiny Black w Gold",
+    price: 730.00,
+    desktop_image: Sun4Main,
+    mobile_image: Sun4Main,
+    type: "glass"
+  },
 
 ]
 
@@ -156,7 +143,7 @@ function SunCollection() {
             <Image
               src={activeProduct.desktop_image}
               quality={100}
-              layout="fill"
+              layout="responsive"
               className="object-center object-cover"
               alt="portrait-handsome-confident-stylish-hipster-lambersexual-modelmodern-man-dressed-white-shirt-fashion.webp"
             />
