@@ -215,13 +215,12 @@ function SunCollection() {
                     
                     <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full  relative flex flex-col space-y-5">
 
-                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-full max-h-[157px] overflow-hidden">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] w-full h-[58%] sm:h-[210px] md:h-[90px] lg:h-[120px] xl:h-[155px] overflow-hidden">
 
                         <Image
                           src={product.url}
                           alt={product.url}
                           layout="responsive"
-                          quality={100}
                           className="object-center object-cover"
                         />
 
@@ -252,13 +251,12 @@ function SunCollection() {
                     
                     <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full relative flex flex-col space-y-5">
 
-                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] h-full max-h-[157px] overflow-hidden">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] w-full h-[58%] sm:h-[210px] md:h-[90px] lg:h-[120px] xl:h-[155px] overflow-hidden">
 
                         <Image
                           src={product.url}
                           alt={product.url}
                           layout="responsive"
-                          quality={100}
                           className="object-center object-cover"
                         />
 
