@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 import Glass from "../public/glass.svg";
-import Girl from "../public/beautiful-young-woman-choosing-new-pair-spectacles-opticians-store-eyesight-correction-optics-ophtha.webp";
+import Girl from "../public/beautiful-young-woman-choosing-new-pair-spectacles-opticians-store-eyesight-correction-optics-ophtha.png";
 
 function AuthorizedRetailer() {
   return (

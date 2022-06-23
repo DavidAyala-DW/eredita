@@ -14,7 +14,7 @@ import Number5 from "../public/5.png";
 
 import RightArrow from "../public/right.svg";
 import LeftArrow from "../public/left.svg";
-import Couple from "../public/cinema-day-young-couple-with-popcorn-watching-interesting-movie-their-date-cinema1.webp";
+import Couple from "../public/cinema-day-young-couple-with-popcorn-watching-interesting-movie-their-date-cinema1.png";
 
 
 function HowItWorks() {

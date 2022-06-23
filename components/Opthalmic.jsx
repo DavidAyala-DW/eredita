@@ -137,7 +137,7 @@ function Opthalmic() {
 
   return (
 
-    <section className="px-5 select-none md:px-0 md:max-w-[85%] mx-auto lg:pr-8 w-full flex flex-col mb-[70px] mt-[54px]">
+    <section className="px-5 select-none  md:px-0 md:max-w-[85%] mx-auto lg:pr-8 w-full flex flex-col mb-[70px] mt-[54px]">
 
       <h2 className="uppercase text-left text-2xl font-starduster italic leading-[23px] tracking-[.145em] text-primary mb-[35px]">
         ophthalmic
@@ -145,7 +145,7 @@ function Opthalmic() {
 
       <div className="flex flex-col space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-[60px] relative">
 
-        <div className="w-full h-[calc(100vw)] md:h-auto block relative border border-black">
+        <div className="w-full h-[calc(100vw)] md:h-auto relative border border-black">
 
           <div className="block lg:hidden">
             <Image
@@ -156,7 +156,7 @@ function Opthalmic() {
             />
           </div>
 
-          <div className="hidden lg:block max-w-[calc(100%)] h-full relative">
+          <div className="hidden lg:block max-w-[calc(100%)] h-full max-h-full overflow-hidden relative">
             <Image
               src={activeProduct.desktop_image}
               layout="fill"
@@ -187,7 +187,6 @@ function Opthalmic() {
 
             <div className="flex flex-col justify-center items-center lg:-translate-y-11 lg:space-y-5">
               <p className="leading-12 text-center uppercase">{activeProduct.title}</p>        
-              {/* <p className="font-bold">{`$${Number(activeProduct.price).toFixed(2)}`}</p>         */}
             </div>
 
 
@@ -195,7 +194,7 @@ function Opthalmic() {
 
         </div>
 
-        <div className="w-full h-full">
+        <div className="w-full h-max">
           
           <Swiper
             modules={[Navigation]}
@@ -203,6 +202,7 @@ function Opthalmic() {
             spaceBetween={10}
             slidesPerView={1}
             loop={true}
+            autoHeight={false}
             navigation={{
               prevEl: ".swiper-prev-2",
               nextEl: ".swiper-next-2"
@@ -217,20 +217,20 @@ function Opthalmic() {
                 },
               }
             }
-            className="block lg:grid w-full h-full mb-[50px] md:mb-0"
+            className="block lg:grid w-full h-max mb-[50px] md:mb-0"
           >
 
-            <SwiperSlide className="w-full flex flex-col h-full">
+            <SwiperSlide className="w-full flex flex-col h-max">
 
-              <div className="grid grid-cols-3 gap-x-[26px] select-none gap-y-10 w-full h-full">
+              <div className="grid grid-cols-3 gap-x-[26px] select-none gap-y-10 w-full h-max">
 
                 { products.map( (product,index) => {
                   if(index > 5) return;
                   return (
                     
-                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full relative flex flex-col space-y-5">
+                    <div key={index} onClick={() => handleClickProduct(index) } className="h-max cursor-pointer w-full relative flex flex-col space-y-5">
 
-                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)]">
+                      <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)] w-full">
                         <Image
                           src={product.url}
                           alt={product.url}
@@ -254,16 +254,16 @@ function Opthalmic() {
 
             </SwiperSlide>
 
-            <SwiperSlide className="w-full flex flex-col h-full">
+            <SwiperSlide className="w-full flex flex-col h-max">
 
-              <div className="grid grid-cols-3 gap-x-5 select-none gap-y-10 w-full h-full">
+              <div className="grid grid-cols-3 gap-x-5 select-none gap-y-10 w-full h-max">
 
                 { products.map( (product,index) => {
                   
                   if(index <= 5) return;
                   return (
                     
-                    <div key={index} onClick={() => handleClickProduct(index) } className="h-full cursor-pointer w-full flex flex-col space-y-5 relative">
+                    <div key={index} onClick={() => handleClickProduct(index) } className="h-max cursor-pointer w-full flex flex-col space-y-5 relative">
 
                       <div className="block px-2 bg-white border rounded-[10px] shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)]">
                         <Image

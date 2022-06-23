@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Banner from "../public/rows-red-seats-theater.webp";
+import Banner from "../public/rows-red-seats-theater.png";
 
 function BannerWithText() {
 

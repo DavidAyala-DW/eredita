@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image"
 import Button from './UI/Button'
-import Glass from "../public/VPLE371.webp"
+import Glass from "../public/VPLE371.png"
 import Barcode from "../public/Trailer-QR-Code.jpg";
 
 function Introduction() {
