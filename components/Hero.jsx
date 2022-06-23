@@ -3,7 +3,7 @@ import Image from "next/image";
 import HeroArrow from "../public/hero_arrow.svg";
 import Button from './UI/Button';
 import HeroBanner from "../public/ezgif.com-gif-maker.jpg"
-import HeroMain from "../public/ezgif.com-gif-maker_1.png";
+import HeroMain from "../public/ezgif.com-gif-maker_1_1.png";
 
 function Hero() {
 
