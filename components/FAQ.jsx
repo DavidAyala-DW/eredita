@@ -99,7 +99,7 @@ function FAQ() {
 
       setTimeout(() =>{
         answer.classList.add("!visible");
-        answer.style.maxHeight = `${answerHeight + 100}px`;
+        answer.style.maxHeight = `${answerHeight + 800}px`;
       },10)
 
     }

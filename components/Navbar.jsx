@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
 
-    <header className="w-full space-y-4 1.5xl:space-y-0 px-5 xl:px-20 1.5xl:space-x-6 1.5xl:pl-[100px] 1.5xl:pr-[172px] py-9  flex items-center flex-col 1.5xl:flex-row justify-center 1.5xl:justify-between bg-primary">
+    <header className="w-full space-y-4 1.5xl:space-y-0 px-5 xl:px-20 1.5xl:space-x-6 1.5xl:pl-[100px] 1.5xl:pr-[172px] py-4 md:py-9  flex items-center flex-col 1.5xl:flex-row justify-center 1.5xl:justify-between bg-primary">
 
       <nav className="flex items-center flex-col
        1.5xl:flex-row space-y-5 1.5xl:space-y-0 w-full xs:w-max md:w-full justify-center 1.5xl:justify-between">

@@ -31,7 +31,7 @@ function Hero() {
 
       <div className="absolute inset-0 w-full h-full bg-hero z-0"></div>
 
-      <div className="flex flex-col pt-[110px] pb-[53px] lg:py-0">
+      <div className="flex flex-col pt-[55px] pb-[53px] lg:py-0">
 
         <div className="flex flex-col h-full w-[95%] md:w-[62.5%] lg:max-w-[680px] 3xl:max-w-[900px] mx-auto z-20 lg:pb-10">
 
@@ -44,9 +44,9 @@ function Hero() {
             />
           </div>
 
-          <div className="flex flex-col mt-10 md:mt-5">
+          <div className="flex flex-col mt-5">
 
-            <h4 className="max-w-[110px] md:max-w-[220px] mb-8 md:mb-3 text-primary mx-auto text-base md:text-sm leading-[19px] md:leading-[22px] text-center font-bold uppercase tracking-[.145em]">
+            <h4 className="max-w-[110px] md:max-w-[220px] mb-5 md:mb-3 text-primary mx-auto text-base md:text-sm leading-[19px] md:leading-[22px] text-center font-bold uppercase tracking-[.145em]">
               Join the promotion
             </h4>
 
