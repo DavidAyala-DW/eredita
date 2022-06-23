@@ -3,7 +3,7 @@ import Image from "next/image";
 import HeroArrow from "../public/hero_arrow.svg";
 import Button from './UI/Button';
 import HeroBanner from "../public/ezgif.com-gif-maker.jpg"
-import HeroMain from "../public/ezgif.com-gif-maker2.webp";
+import HeroMain from "../public/ezgif.com-gif-maker_1.png";
 
 function Hero() {
 
@@ -31,7 +31,7 @@ function Hero() {
 
       <div className="absolute inset-0 w-full h-full bg-hero z-0"></div>
 
-      <div className="flex flex-col pt-[210px] pb-[53px] lg:py-0">
+      <div className="flex flex-col pt-[110px] pb-[53px] lg:py-0">
 
         <div className="flex flex-col h-full w-[95%] md:w-[62.5%] lg:max-w-[680px] 3xl:max-w-[900px] mx-auto z-20 lg:pb-10">
 

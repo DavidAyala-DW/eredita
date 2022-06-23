@@ -44,7 +44,7 @@ function AuthorizedRetailer() {
 
                 <div className="flex flex-start space-x-[18px]">
 
-                  <div className="max-w-[46px]">
+                  <div className="min-w-[46px] max-w-[46px]">
                     <Glass/>
                   </div>
 
@@ -56,7 +56,7 @@ function AuthorizedRetailer() {
 
                 <div className="flex flex-start space-x-[18px]">
 
-                  <div className="max-w-[46px]">
+                  <div className="min-w-[46px] max-w-[46px]">
                     <Glass/>
                   </div>
 
@@ -68,7 +68,7 @@ function AuthorizedRetailer() {
 
                 <div className="flex flex-start space-x-[18px]">
 
-                  <div className="max-w-[46px]">
+                  <div className="min-w-[46px] max-w-[46px]">
                     <Glass/>
                   </div>
 
@@ -80,7 +80,7 @@ function AuthorizedRetailer() {
 
                 <div className="flex flex-start space-x-[18px]">
 
-                  <div className="max-w-[46px]">
+                  <div className="min-w-[46px] max-w-[46px]">
                     <Glass/>
                   </div>
 

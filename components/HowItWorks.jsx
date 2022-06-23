@@ -48,6 +48,16 @@ function HowItWorks() {
             prevEl: ".swiper-prev-hiw",
             nextEl: ".swiper-next-hiw"
           }}
+          breakpoints={
+            {
+              320: {
+                autoHeight: true
+              },
+              768: {
+                autoHeight: false
+              },
+            }
+          }
           className="!-mt-[55px] md:!-mt-20 bg-white backdrop-blur-[8px] bg-opacity-80 lg:backdrop-blur-[24px] !w-[calc(100%-20px)] lg:mx-0 lg:!w-[calc(100%+64px)] lg:-mt-0 mx-auto lg:!ml-[-64px] !z-20 rounded-[12px] max-h-max lg:!my-auto shadow-[0px_2px_6px_rgba(151,_172,_198,_0.25)]"
         >
 

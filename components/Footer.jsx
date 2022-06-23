@@ -86,7 +86,7 @@ function Footer() {
           </p>
 
           <p className="md:hidden text-xs leading-9 text-white">
-            © 2022 Eredità Eyewear Group Inc
+            © 2022 Eredità Eyewear Group Inc.
           </p>
 
           <div className="flex items-center flex-wrap space-x-5 md:space-x-0">
