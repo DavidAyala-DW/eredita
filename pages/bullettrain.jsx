@@ -1,31 +1,100 @@
-import React from 'react'
-import Image from "next/image";
-import HeroMain from "../public/ezgif.com-gif-maker_1_1.png";
+import Image from 'next/image'
+import { useContext, useEffect } from 'react'
+import Brands from '../components/Brands'
+import FeaturedProduct from '../components/FeaturedProduct'
+import Footer from '../components/FooterL'
+import Header from '../components/Header'
+import HeroWithSlider from '../components/HeroWithSlider'
+import {AppContext} from "../helpers/Context";
+import Locator from "../public/Locator.png";
+import LocatorMobile from "../public/LocatorMobile.png";
+export default function Bullettrain({texts,server}) {
 
-export default function bullettrain() {
+  const [contentPage, setContentPage] = useContext(AppContext);
+
+  useEffect(() => {    
+
+    const actualSettings = {texts};
+
+    if(typeof window !== "undefined"){
+
+      if(navigator.language.includes("fr")){
+        actualSettings.language = "french"
+      }else{
+        actualSettings.language = "english"
+      }
+      
+    }
+
+    setContentPage(actualSettings);
+    
+    console.log(server);
+  }, [server,texts,setContentPage]);
 
   return (
 
-    <section className="flex flex-col justify-center min-h-screen pt-[55px] pb-[53px] lg:py-0">
+    <main>
+      <Header/>
+      <HeroWithSlider/>
+      <FeaturedProduct/>
+      <div className="w-full locator">
 
-      <div className="flex flex-col">
-        
-        <h1 className="text-primary font-starduster text-[50px] text-center">
-          Coming Soon
-        </h1>
-
-        <div className="flex flex-col h-full w-[95%] md:w-[62.5%] lg:max-w-[680px] 3xl:max-w-[900px] mx-auto z-20 lg:pb-10">
+        <div className="w-full hidden md:block">
           <Image
-            src={HeroMain}
-            alt="hero_main.webp"
-            layout='responsive'
-            priority={true}
+            src={Locator}
+            alt="locator"
+            layout="responsive"
+            className="w-full block"
+          />
+        </div>
+
+        <div className="w-full block md:hidden">
+          <Image
+            src={LocatorMobile}
+            alt="locator"
+            layout="responsive"
+            className="w-full block"
           />
         </div>
 
       </div>
-
-    </section>
+      <Brands/>
+      <Footer/>
+    </main>
 
   )
+}
+
+export const getServerSideProps = async (ctx) => {
+  
+  const dev = process.env.NODE_ENV !== 'production';
+  let textObject;
+  let server;
+
+  try {  
+
+    if (ctx.req) {
+      server = ctx.req.headers.host // will give you localhost:3000
+    }
+
+    server = dev ? 'http://localhost:3000' : `https://${server}`;
+    const req = await fetch(server + "/settings.json");
+    const res = await req.json();
+    const {texts} = res;
+    if(!texts){
+      textObject = {};  
+    }else{
+      textObject = texts;
+    }    
+    
+ 
+  } catch (error) {
+    textObject = {};
+  }
+  return {
+    props:{
+      texts: textObject,
+      server
+    }
+  }
 }

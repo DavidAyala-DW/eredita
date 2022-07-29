@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'brooklyn';
   src: url('../public/Brooklyn-Bold.ttf') format('opentype'),
@@ -53,14 +57,6 @@
 };
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer utilities {
-  .pause {
-    animation-play-state: paused;
-  }
-}
 
 html{
   font-family: sans-serif;
@@ -74,4 +70,49 @@ html{
 
 body,*{
   font-family: "brooklyn";
+}
+
+.swiperGallery{
+  .swiper-pagination-bullet{
+    bottom: 5px !important;
+    width: 50px!important;
+    height: 1.5px!important;
+    background-color:#B6B6B6!important;
+    opacity: 1!important;
+    border-radius: 0!important;
+    margin-right: 20px!important;
+  }
+  
+  .swiper-pagination-bullet:last-of-type{
+    margin-right: 0px!important; 
+  }
+  
+  .swiper-pagination-bullet-active{
+    background-color: black!important;
+  }
+
+}
+
+.swiperVariants {
+
+  .swiper-pagination-horizontal{
+    bottom: 0px!important;
+  }
+
+  .swiper-pagination-bullet{
+    bottom: 5px !important;
+  }
+  
+  .swiper-pagination-bullet:last-of-type{
+    margin-right: 0px!important; 
+  }
+  
+  .swiper-pagination-bullet-active{
+    background-color: black!important;
+  }
+
+}
+
+.swiper-button-disabled{
+  opacity: .5;
 }
