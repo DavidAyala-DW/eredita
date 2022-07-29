@@ -11,7 +11,7 @@ export default function bullettrain() {
       <div className="flex flex-col">
         
         <h1 className="text-primary font-starduster text-[50px] text-center">
-          Comming Soon
+          Coming Soon
         </h1>
 
         <div className="flex flex-col h-full w-[95%] md:w-[62.5%] lg:max-w-[680px] 3xl:max-w-[900px] mx-auto z-20 lg:pb-10">
