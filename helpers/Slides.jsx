@@ -1,4 +1,4 @@
-import Slide from "../public/img_bluehavana.png";
+import Slide from "../public/ProductImage_cleanup.png";
 import Slide1 from "../public/VPLE37.png";
 import Slide2 from "../public/img_tortoise.png";
 import Slide3 from "../public/img_tortoise_2.png";
@@ -9,38 +9,83 @@ export const galleries = [
   {
     handle: "slide1",
     slides:[
-      Slide1,
-      Slide,
-      Slide,
-      Slide1,
-      Slide,
+      {
+        desktop: Slide,
+        mobile: Slide1,
+      },
+      {
+        desktop: Slide1,
+        mobile: Slide1,
+      },
+      {
+        desktop: Slide1,
+        mobile: Slide1,
+      },
+      {
+        desktop: Slide1,
+        mobile: Slide1,
+      },
+      {
+        desktop: Slide1,
+        mobile: Slide1,
+      },
     ]
   },
   
   {
     handle: "slide2",
     slides:[
-      Slide2,
-      Slide2,
-      Slide2,
-      Slide2
+      {
+        desktop: Slide2,
+        mobile: Slide2,
+      },
+      {
+        desktop: Slide2,
+        mobile: Slide2,
+      },
+      {
+        desktop: Slide2,
+        mobile: Slide2,
+      },
+      {
+        desktop: Slide2,
+        mobile: Slide2,
+      },
     ]
   },
 
   {
     handle: "slide3",
     slides:[
-      Slide3,
-      Slide3,
-      Slide3,
+      {
+        desktop: Slide3,
+        mobile: Slide3,
+      },
+      {
+        desktop: Slide3,
+        mobile: Slide3,
+      },
+      {
+        desktop: Slide3,
+        mobile: Slide3,
+      },
+      {
+        desktop: Slide3,
+        mobile: Slide3,
+      },
     ]
   },
 
   {
     handle: "slide4",
     slides:[
-      Slide4,
-      Slide4,
+      {
+        desktop: Slide4,
+        mobile: Slide4,
+      },      {
+        desktop: Slide4,
+        mobile: Slide4,
+      },
     ]
   }
 

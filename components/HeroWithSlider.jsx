@@ -40,6 +40,7 @@ function HeroWithSlider() {
   const [activeVariant, setActiveVariant] = useState(null);
   const [swiperGallery, setSwiperGallery] = useState(null);
   const [swiperGallery2, setSwiperGallery2] = useState(null);
+  const [swiperGallery3, setSwiperGallery3] = useState(null);
   const [realIndexGallery, setRealIndexGallery] = useState(0);
 
   const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
@@ -135,6 +136,23 @@ function HeroWithSlider() {
     }    
   }, [swiperGallery2]);
 
+  useEffect(() => {
+
+    if(swiperGallery3?.__swiper__){
+
+      if(swiperGallery3.slides.length > swiperGallery3.params.slidesPerView){
+
+        const left_arrow_variant = document.querySelector(".left-arrow-variant");
+        left_arrow_variant.classList.remove("md:hidden");
+        const right_arrow_variant = document.querySelector(".right-arrow-variant");
+        right_arrow_variant.classList.remove("md:hidden");
+
+      }
+
+    }
+
+  },[swiperGallery3,variants])
+
   return (
 
     <section className="w-full md2:px-5 xl:px-0 xl:max-w-[85%] xl:mx-auto flex flex-col md:pt-20 pb-16">
@@ -191,35 +209,37 @@ function HeroWithSlider() {
 
       <div className="w-full flex flex-col px-5 md2:grid md2:grid-cols-[57.8%_39.3%] gap-x-10">
 
-        <div className="relative h-auto w-full hidden md2:grid">
+        <div className="relative h-auto w-full flex flex-col">
 
           {
 
-            isFirstGallery && realIndexGallery == 0 ? (
+            // isFirstGallery && realIndexGallery == 0 ? (
 
-              <Image
-                src={FirstImage}
-                alt="Background Image"
-                layout="responsive"
-                quality={100}
-                priority={true}
-              />
+            //   <Image
+            //     src={FirstImage}
+            //     alt="Background Image"
+            //     layout="responsive"
+            //     quality={100}
+            //     priority={true}
+            //   />
 
-            ) :
+            // ) :
 
-            (
-              <div className="h-full w-full bg-white"></div>
-            )
+            // (
+            //   <div className="h-full w-full bg-white"></div>
+            // )
 
           }
 
-          <div className="absolute swiperGallery max-w-[87%] bottom-[16.6%] left-[6.5%]">
+          {/* <div className="h-full w-full bg-white z-[-1]"></div> */}
+
+          <div className="swiperGallery hidden md2:block w-full h-full max-h-[708px]">
 
             <Swiper 
               modules={[Pagination]}
               speed={300}
               spaceBetween={20}
-              className="w-full relative !z-[3] !grid grid-flow-col h-auto"
+              className="w-full relative !z-[3] !grid grid-flow-col h-full"
               slides={activeGallery.length}
               onSwiper={setSwiperGallery2}
               slidesPerView={1}
@@ -228,12 +248,12 @@ function HeroWithSlider() {
               {            
 
                 activeGallery.map((slide,i) => {
-
+                  const {desktop:productImage}= slide;
                   return (
 
                     <SwiperSlide className="w-full min-h-[303px] z-[3] flex justify-center h-auto" key={i}>
                       <Image
-                        src={slide}
+                        src={productImage}
                         alt="Alt"
                         layout="intrinsic"
                         quality={100}
@@ -252,7 +272,7 @@ function HeroWithSlider() {
 
           </div>
 
-          <div className="absolute max-w-[24.2%] left-[24%] md2:left-[unset] md2:right-[18%] bottom-[50%] md2:bottom-[39%] z-[4] md2:z-[2]">
+          {/* <div className="absolute max-w-[24.2%] left-[24%] md2:left-[unset] md2:right-[18%] bottom-[50%] md2:bottom-[39%] z-[4] md2:z-[2]">
             <Image
               src={Badge}
               alt="Alt"
@@ -260,7 +280,7 @@ function HeroWithSlider() {
               quality={100}
               priority={true}
             />
-          </div>
+          </div> */}
 
         </div>
 
@@ -301,7 +321,7 @@ function HeroWithSlider() {
                 modules={[Pagination]}
                 speed={300}
                 spaceBetween={20}
-                className="w-full flex relative cursor-pointer !pb-4"
+                className="w-full flex relative cursor-pointer !pb-8"
                 slides={activeGallery.length}
                 onSwiper={setSwiperGallery}
                 slidesPerView={1}
@@ -311,14 +331,18 @@ function HeroWithSlider() {
                 {            
 
                   activeGallery.map((slide,i) => {
-
+                    const {mobile:productImage}= slide;
                     return (
 
                       <SwiperSlide className="cursor-pointer flex justify-center" key={i}>
-                        <Image
-                          src={slide}
-                          alt="slide"
-                        />
+                        <div className="relative pb-[56.25%] w-full">
+                          <div className="absolute flex justify-center w-full h-full">
+                            <Image
+                              src={productImage}
+                              alt="slide"
+                            />
+                          </div>
+                        </div>
                       </SwiperSlide>
 
                     )
@@ -355,6 +379,7 @@ function HeroWithSlider() {
                   nextEl: '.right-arrow-variant',
                 }}
                 className="w-full flex relative cursor-pointer"
+                onSwiper={setSwiperGallery3}
                 breakpoints = {{
 
                   320: {
@@ -412,11 +437,11 @@ function HeroWithSlider() {
 
             </div>
 
-            <div className="w-full py-[15.5px] px-[74px] border border-secondary bg-secondary mb-[30px] cursor-pointer">
+            <a className="w-full block py-[15.5px] px-[74px] border border-secondary bg-secondary mb-[30px] cursor-pointer" href={activeVariant?.link}>
               <p className="font-semibold text-sm leading-5 tracking-[0.045em] uppercase text-center text-[#0A0B0E]">
               {contentPage?.texts?.[contentPage?.language]?.hero_cta_text}
               </p>
-            </div>
+            </a>
 
             <div className="flex max-h-[40px] description-container w-full flex-col space-y-5 pb-6 border-[#F5F5F5] border-b transition-[max-height] ease-[ease-in-out] duration-150 relative">
 

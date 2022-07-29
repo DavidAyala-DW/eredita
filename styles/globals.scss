@@ -73,14 +73,25 @@ body,*{
 }
 
 .swiperGallery{
+
   .swiper-pagination-bullet{
     bottom: 5px !important;
     width: 50px!important;
-    height: 1.5px!important;
+    height: 2.5px!important;
     background-color:#B6B6B6!important;
     opacity: 1!important;
     border-radius: 0!important;
     margin-right: 20px!important;
+    position: relative;
+  }
+
+  .swiper-pagination-bullet::after{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 30px;
   }
   
   .swiper-pagination-bullet:last-of-type{
@@ -89,6 +100,12 @@ body,*{
   
   .swiper-pagination-bullet-active{
     background-color: black!important;
+  } 
+
+  @media(min-width:980px){
+    .swiper-pagination-horizontal{
+      bottom: 75px!important;
+    }
   }
 
 }

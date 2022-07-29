@@ -23,7 +23,7 @@ function FeaturedProduct() {
             {contentPage?.texts?.[contentPage?.language]?.spl37_description}
           </p>
 
-          <a href="" className="block bg-secondary text-primary py-[13.5px] px-4 uppercase tracking-[0.145em] text-center font-bold mb-[-24px]">
+          <a href="" className="block bg-secondary text-primary py-[13.5px] px-4 uppercase tracking-[0.145em] text-center font-bold mb-10">
             {contentPage?.texts?.[contentPage?.language]?.spl37_preOrder_text}
           </a>
 

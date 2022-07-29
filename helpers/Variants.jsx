@@ -10,24 +10,28 @@ export const allVariants = [
     handle: "slide1",
     image: Product1,
     color: "Blue Havana",
+    link: "/bullettrain"
   },
 
   {
     handle: "slide2",
     image: Product2,
-    color: "Tortoise"
+    color: "Tortoise",
+    link: "/"
   },
 
   {
     handle: "slide3",
     image: Product3,
-    color: "Black"
+    color: "Black",
+    link: ""
   },
 
   {
     handle: "slide4",
     image: Product4,
-    color: "Shiny Black"
+    color: "Shiny Black",
+    link: ""
   },
   
 ]
