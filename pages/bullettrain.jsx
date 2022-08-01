@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import Script from 'next/script'
 import { useContext, useEffect } from 'react'
 import Brands from '../components/Brands'
 import FeaturedProduct from '../components/FeaturedProduct'
@@ -53,36 +54,39 @@ export default function Bullettrain({texts,server}) {
 
   return (
 
-    <main>      
-      <Header/>
-      <HeroWithSlider/>
-      <FeaturedProduct/>
-      <div className="storerocket-store-locator"></div>
+    <>
+    <Script src="//cdn.storerocket.io/widget.js"  strategy="lazyOnload"/>
+      <main>      
+        <Header/>
+        <HeroWithSlider/>
+        <FeaturedProduct/>
+        <div className="storerocket-store-locator"></div>
 
-      {/* <div className="w-full locator">
+        {/* <div className="w-full locator">
 
-        <div className="w-full hidden md:block">
-          <Image
-            src={Locator}
-            alt="locator"
-            layout="responsive"
-            className="w-full block"
-          />
-        </div>
+          <div className="w-full hidden md:block">
+            <Image
+              src={Locator}
+              alt="locator"
+              layout="responsive"
+              className="w-full block"
+            />
+          </div>
 
-        <div className="w-full block md:hidden">
-          <Image
-            src={LocatorMobile}
-            alt="locator"
-            layout="responsive"
-            className="w-full block"
-          />
-        </div>
+          <div className="w-full block md:hidden">
+            <Image
+              src={LocatorMobile}
+              alt="locator"
+              layout="responsive"
+              className="w-full block"
+            />
+          </div>
 
-      </div> */}
-      <Brands/>
-      <Footer/>
-    </main>
+        </div> */}
+        <Brands/>
+        <Footer/>
+      </main>
+    </>
 
   )
 }
