@@ -36,14 +36,11 @@ export default function Bullettrain({texts,server}) {
 
   useEffect(() => {
 
-    // StoreRocket.init({
-    //   selector: ".storerocket-store-locator",
-    //   account: "vk8PKozJbm"
-    // });
     let config = {
       selector: ".storerocket-store-locator",
       account: "vk8PKozJbm"
     };
+
     if (typeof window !== 'undefined'){
       setTimeout(() => {
         window?.StoreRocket?.init(config);  
@@ -55,34 +52,16 @@ export default function Bullettrain({texts,server}) {
   return (
 
     <>
-    <Script src="//cdn.storerocket.io/widget.js"  strategy="lazyOnload"/>
+      <Script src="//cdn.storerocket.io/widget.js"  strategy="lazyOnload"/>
       <main>      
         <Header/>
         <HeroWithSlider/>
         <FeaturedProduct/>
-        <div className="storerocket-store-locator"></div>
-
-        {/* <div className="w-full locator">
-
-          <div className="w-full hidden md:block">
-            <Image
-              src={Locator}
-              alt="locator"
-              layout="responsive"
-              className="w-full block"
-            />
-          </div>
-
-          <div className="w-full block md:hidden">
-            <Image
-              src={LocatorMobile}
-              alt="locator"
-              layout="responsive"
-              className="w-full block"
-            />
-          </div>
-
-        </div> */}
+        <div className="flex flex-col w-full space-y-10 py-20 bg-[#E8EBF1]">
+          <h2 className="uppercase text-[32px] leading-[38.4px] leading-[14.5%] text-center text-primary tracking-[0.145em] font-bold">locations</h2>
+          <div className="storerocket-store-locator"></div>
+        </div>
+        
         <Brands/>
         <Footer/>
       </main>
