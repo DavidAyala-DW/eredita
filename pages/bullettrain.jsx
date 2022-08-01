@@ -10,6 +10,7 @@ import {AppContext} from "../helpers/Context";
 import Locator from "../public/Locator.png";
 import LocatorMobile from "../public/LocatorMobile.png";
 
+
 export default function Bullettrain({texts,server}) {
   
   const [contentPage, setContentPage] = useContext(AppContext);
@@ -43,17 +44,13 @@ export default function Bullettrain({texts,server}) {
       account: "vk8PKozJbm"
     };
   
-    window.StoreRocket.init(config);
+    window?.StoreRocket?.init(config);
 
   }, []);
 
   return (
 
-    <main>
-      <script
-        type="text/javascript"
-        src="//cdn.storerocket.io/widget.js"
-      ></script>
+    <main>      
       <Header/>
       <HeroWithSlider/>
       <FeaturedProduct/>
