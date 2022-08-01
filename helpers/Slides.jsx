@@ -1,8 +1,18 @@
-import Slide from "../public/ProductImage_cleanup.png";
-import Slide1 from "../public/VPLE37.png";
-import Slide2 from "../public/img_tortoise.png";
-import Slide3 from "../public/img_tortoise_2.png";
-import Slide4 from "../public/img_tortoise_2__2.png";
+import Slide1Gallery1D from "../public/products/product1_slide_1.png";
+import Slide1Gallery1M from "../public/products/product1_slide_1_m.png";
+import Slide1Gallery2 from "../public/products/product1_slide_2.png";
+
+import Slide2Gallery1D from "../public/products/product2_slide_1.png";
+import Slide2Gallery1M from "../public/products/product2_slide_1_m.png";
+import Slide2Gallery2 from "../public/products/product2_slide_2.png";
+
+import Slide3Gallery1D from "../public/products/product3_slide_1.png";
+import Slide3Gallery1M from "../public/products/product3_slide_1_m.png";
+import Slide3Gallery2 from "../public/products/product3_slide_2.png";
+
+import Slide4Gallery1D from "../public/products/product4_slide_1.png";
+import Slide4Gallery1M from "../public/products/product4_slide_1_m.png";
+import Slide4Gallery2 from "../public/products/product4_slide_2.png";
 
 export const galleries = [
 
@@ -10,25 +20,13 @@ export const galleries = [
     handle: "slide1",
     slides:[
       {
-        desktop: Slide,
-        mobile: Slide1,
+        desktop: Slide1Gallery1D,
+        mobile: Slide1Gallery1M
       },
       {
-        desktop: Slide1,
-        mobile: Slide1,
-      },
-      {
-        desktop: Slide1,
-        mobile: Slide1,
-      },
-      {
-        desktop: Slide1,
-        mobile: Slide1,
-      },
-      {
-        desktop: Slide1,
-        mobile: Slide1,
-      },
+        desktop: Slide1Gallery2,
+        mobile: Slide1Gallery2
+      }
     ]
   },
   
@@ -36,21 +34,13 @@ export const galleries = [
     handle: "slide2",
     slides:[
       {
-        desktop: Slide2,
-        mobile: Slide2,
+        desktop: Slide2Gallery1D,
+        mobile: Slide2Gallery1M
       },
       {
-        desktop: Slide2,
-        mobile: Slide2,
-      },
-      {
-        desktop: Slide2,
-        mobile: Slide2,
-      },
-      {
-        desktop: Slide2,
-        mobile: Slide2,
-      },
+        desktop: Slide2Gallery2,
+        mobile: Slide2Gallery2
+      }
     ]
   },
 
@@ -58,21 +48,13 @@ export const galleries = [
     handle: "slide3",
     slides:[
       {
-        desktop: Slide3,
-        mobile: Slide3,
+        desktop: Slide3Gallery1D,
+        mobile: Slide3Gallery1M
       },
       {
-        desktop: Slide3,
-        mobile: Slide3,
-      },
-      {
-        desktop: Slide3,
-        mobile: Slide3,
-      },
-      {
-        desktop: Slide3,
-        mobile: Slide3,
-      },
+        desktop: Slide3Gallery2,
+        mobile: Slide3Gallery2
+      }
     ]
   },
 
@@ -80,13 +62,15 @@ export const galleries = [
     handle: "slide4",
     slides:[
       {
-        desktop: Slide4,
-        mobile: Slide4,
-      },      {
-        desktop: Slide4,
-        mobile: Slide4,
+        desktop: Slide4Gallery1D,
+        mobile: Slide4Gallery1M
       },
+      {
+        desktop: Slide4Gallery2,
+        mobile: Slide4Gallery2
+      }
     ]
   }
 
 ]
+

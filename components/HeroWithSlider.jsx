@@ -335,12 +335,15 @@ function HeroWithSlider() {
                     return (
 
                       <SwiperSlide className="cursor-pointer flex justify-center" key={i}>
-                        <div className="relative pb-[56.25%] w-full">
-                          <div className="absolute flex justify-center w-full h-full">
-                            <Image
-                              src={productImage}
-                              alt="slide"
-                            />
+                        <div className="w-full max-w-[450px] mx-auto">
+                          <div className="relative pb-[100%] w-full">
+                            <div className="absolute flex justify-center w-full h-full">
+                              <Image
+                                src={productImage}
+                                alt="slide"
+                                className="object-cover"
+                              />
+                            </div>
                           </div>
                         </div>
                       </SwiperSlide>

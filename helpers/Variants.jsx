@@ -1,35 +1,34 @@
-import Product1 from "../public/product1.png";
-import Product2 from "../public/product2.png";
-import Product3 from "../public/product3.png";
-import Product4 from "../public/product4.png";
-import Product5 from "../public/5.png";
+import Slide1Front from "../public/products/product1_front.png";
+import Slide2Front from "../public/products/product2_front.png";
+import Slide3Front from "../public/products/product3_front.png";
+import Slide4Front from "../public/products/product4_front.png";
 
 export const allVariants = [
 
   {
     handle: "slide1",
-    image: Product1,
+    image: Slide1Front,
     color: "Blue Havana",
     link: "/bullettrain"
   },
 
   {
     handle: "slide2",
-    image: Product2,
+    image: Slide2Front,
     color: "Tortoise",
     link: "/"
   },
 
   {
     handle: "slide3",
-    image: Product3,
+    image: Slide3Front,
     color: "Black",
     link: ""
   },
 
   {
     handle: "slide4",
-    image: Product4,
+    image: Slide4Front,
     color: "Shiny Black",
     link: ""
   },
