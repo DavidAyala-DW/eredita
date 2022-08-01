@@ -14,6 +14,8 @@ import Opthalmic from '../components/Opthalmic'
 import SunCollection from '../components/SunCollection'
 import Button from '../components/UI/Button'
 
+
+
 export default function Home() {
   return (
 
@@ -22,7 +24,7 @@ export default function Home() {
       <Head>
         <title>Eredità-Cineplex | Shop The Movies</title>
       </Head>
-
+      
       <Navbar/>
 
       <Hero/>
@@ -76,7 +78,7 @@ export default function Home() {
         />
 
       </a>
-
+    
       <Footer/>
 
     </div>

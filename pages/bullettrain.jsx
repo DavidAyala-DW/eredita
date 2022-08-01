@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Head from 'next/head'
 import { useContext, useEffect } from 'react'
 import Brands from '../components/Brands'
 import FeaturedProduct from '../components/FeaturedProduct'
@@ -8,8 +9,9 @@ import HeroWithSlider from '../components/HeroWithSlider'
 import {AppContext} from "../helpers/Context";
 import Locator from "../public/Locator.png";
 import LocatorMobile from "../public/LocatorMobile.png";
-export default function Bullettrain({texts,server}) {
 
+export default function Bullettrain({texts,server}) {
+  
   const [contentPage, setContentPage] = useContext(AppContext);
 
   useEffect(() => {    
@@ -27,17 +29,37 @@ export default function Bullettrain({texts,server}) {
     }
 
     setContentPage(actualSettings);
-    
-    console.log(server);
+        
   }, [server,texts,setContentPage]);
+
+  useEffect(() => {
+
+    // StoreRocket.init({
+    //   selector: ".storerocket-store-locator",
+    //   account: "vk8PKozJbm"
+    // });
+    let config = {
+      selector: ".storerocket-store-locator",
+      account: "vk8PKozJbm"
+    };
+  
+    window.StoreRocket.init(config);
+
+  }, []);
 
   return (
 
     <main>
+      <script
+        type="text/javascript"
+        src="//cdn.storerocket.io/widget.js"
+      ></script>
       <Header/>
       <HeroWithSlider/>
       <FeaturedProduct/>
-      <div className="w-full locator">
+      <div className="storerocket-store-locator"></div>
+
+      {/* <div className="w-full locator">
 
         <div className="w-full hidden md:block">
           <Image
@@ -57,7 +79,7 @@ export default function Bullettrain({texts,server}) {
           />
         </div>
 
-      </div>
+      </div> */}
       <Brands/>
       <Footer/>
     </main>
