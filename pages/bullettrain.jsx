@@ -52,7 +52,7 @@ export default function Bullettrain({texts,server}) {
   return (
 
     <>
-      <Script src="//cdn.storerocket.io/widget.js"  strategy="lazyOnload"/>
+      <Script src="//cdn.storerocket.io/widget.js"/>
       <main>      
         <Header/>
         <HeroWithSlider/>
