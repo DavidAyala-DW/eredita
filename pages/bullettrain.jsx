@@ -44,7 +44,9 @@ export default function Bullettrain({texts,server}) {
       account: "vk8PKozJbm"
     };
     if (typeof window !== 'undefined'){
-      window?.StoreRocket?.init(config);
+      setTimeout(() => {
+        window?.StoreRocket?.init(config);  
+      }, 1000);      
     }    
 
   }, []);
