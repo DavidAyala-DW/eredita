@@ -43,8 +43,9 @@ export default function Bullettrain({texts,server}) {
       selector: ".storerocket-store-locator",
       account: "vk8PKozJbm"
     };
-  
-    window?.StoreRocket?.init(config);
+    if (typeof window !== 'undefined'){
+      window?.StoreRocket?.init(config);
+    }    
 
   }, []);
 
