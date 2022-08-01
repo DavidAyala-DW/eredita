@@ -42,9 +42,15 @@ export default function Bullettrain({texts,server}) {
     };
 
     if (typeof window !== 'undefined'){
-      setTimeout(() => {
+
+      function handleLoad(){
         window?.StoreRocket?.init(config);  
-      }, 1000);      
+      }
+
+      window.addEventListener("load",handleLoad);
+
+      return window.removeEventListener("load",handleLoad,true);
+      
     }    
 
   }, []);
