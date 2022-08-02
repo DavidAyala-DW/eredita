@@ -8,21 +8,21 @@ export const allVariants = [
   {
     handle: "slide1",
     image: Slide1Front,
-    color: "Blue Havana",
+    color: "Black",
     link: "/bullettrain"
   },
 
   {
     handle: "slide2",
     image: Slide2Front,
-    color: "Tortoise",
+    color: "Blue havana",
     link: "/"
   },
 
   {
     handle: "slide3",
     image: Slide3Front,
-    color: "Black",
+    color: "Tortoise",
     link: ""
   },
 
