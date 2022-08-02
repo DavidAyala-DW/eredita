@@ -58,17 +58,17 @@ export default function Bullettrain({texts,server}) {
   return (
 
     <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-J4YZD7MQ9W"  strategy="lazyOnload"></Script>
+    
+      <Script src="https://www.googletagmanager.com/gtag/js?id=UA-236279258-1"  strategy="lazyOnload"></Script>
         
-      <Script strategy="lazyOnload" id="google-analytics">
+        <Script strategy="lazyOnload" id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
-            gtag('config', 'G-J4YZD7MQ9W');
+            gtag('config', 'UA-236279258-1');
           `}
-      </Script>
+        </Script>
   
       <Script src="//cdn.storerocket.io/widget.js"/>
       <main>      
