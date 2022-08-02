@@ -141,9 +141,9 @@ body,*{
   height: auto;
 }
 
-.swiperBrands{
-  padding-left: 36px!important;
+.swiperBrands .swiper-wrapper{
+  margin-left: 40px!important;
   @media (min-width: 768px) {
-    padding-left: 0px;
+    margin-left: 0!important;
   }
 }

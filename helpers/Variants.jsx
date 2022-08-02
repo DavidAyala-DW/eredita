@@ -9,28 +9,28 @@ export const allVariants = [
     handle: "slide1",
     image: Slide1Front,
     color: "Black",
-    link: "/bullettrain"
+    link: "https://ereditaeyewear.com/cart/41841573396640:1"
   },
 
   {
     handle: "slide2",
     image: Slide2Front,
     color: "Blue havana",
-    link: "/"
+    link: "https://ereditaeyewear.com/cart/41841573429408:1"
   },
 
   {
     handle: "slide3",
     image: Slide3Front,
-    color: "Tortoise",
-    link: ""
+    color: "Havana",
+    link: "https://ereditaeyewear.com/cart/41841573462176:1"
   },
 
   {
     handle: "slide4",
     image: Slide4Front,
     color: "Shiny Black",
-    link: ""
+    link: "https://ereditaeyewear.com/cart/41841573494944:1"
   },
   
 ]

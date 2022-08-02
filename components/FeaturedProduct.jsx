@@ -27,7 +27,7 @@ function FeaturedProduct() {
             {contentPage?.texts?.[contentPage?.language]?.spl37_description}
           </p>
 
-          <a href="" className="block bg-secondary text-primary py-[13.5px] px-4 uppercase tracking-[0.145em] text-center font-bold mb-10">
+          <a href="https://ereditaeyewear.com/products/sple37-origins-bullet-1" className="block bg-secondary text-primary py-[13.5px] px-4 uppercase tracking-[0.145em] text-center font-bold mb-10">
             {contentPage?.texts?.[contentPage?.language]?.spl37_preOrder_text}
           </a>
 
