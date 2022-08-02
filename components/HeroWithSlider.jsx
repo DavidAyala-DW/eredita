@@ -402,11 +402,11 @@ function HeroWithSlider() {
 
             </div>
 
-            <div className="w-full py-[15.5px] px-5 border border-[#0A0B0E] mb-4 cursor-pointer">
+            <div className="w-full py-[15.5px] px-5 border border-[#0A0B0E] mb-4 cursor-pointer" onClick={handleScrollLocator} >
 
               <div className="flex items-center space-x-2 max-w-max mx-auto">
 
-                <p onClick={handleScrollLocator} className="font-semibold text-sm leading-5 cursor-pointer tracking-[0.045em] uppercase text-center text-[#0A0B0E]">
+                <p className="font-semibold text-sm leading-5 cursor-pointer tracking-[0.045em] uppercase text-center text-[#0A0B0E]">
                   {contentPage?.texts?.[contentPage?.language]?.store_locator_button_text}
                 </p>
 
