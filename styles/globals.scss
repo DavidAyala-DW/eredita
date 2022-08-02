@@ -133,3 +133,17 @@ body,*{
 .swiper-button-disabled{
   opacity: .5;
 }
+
+.swiperGalleryWrapper .swiper-wrapper{
+  display: grid !important;
+  grid-auto-flow: column;
+  width: 100%;
+  height: auto;
+}
+
+.swiperBrands{
+  padding-left: 36px!important;
+  @media (min-width: 768px) {
+    padding-left: 0px;
+  }
+}

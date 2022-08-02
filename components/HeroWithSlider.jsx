@@ -207,31 +207,9 @@ function HeroWithSlider() {
 
       </div>
 
-      <div className="w-full flex flex-col px-5 md2:grid md2:grid-cols-[57.8%_39.3%] gap-x-10">
+      <div className="w-full flex flex-col px-5 md2:px-0 md2:grid md2:grid-cols-[57.8%_39.3%] gap-x-10">
 
         <div className="relative h-auto w-full flex flex-col">
-
-          {
-
-            // isFirstGallery && realIndexGallery == 0 ? (
-
-            //   <Image
-            //     src={FirstImage}
-            //     alt="Background Image"
-            //     layout="responsive"
-            //     quality={100}
-            //     priority={true}
-            //   />
-
-            // ) :
-
-            // (
-            //   <div className="h-full w-full bg-white"></div>
-            // )
-
-          }
-
-          {/* <div className="h-full w-full bg-white z-[-1]"></div> */}
 
           <div className="swiperGallery hidden md2:block w-full h-full max-h-[708px]">
 
@@ -239,7 +217,7 @@ function HeroWithSlider() {
               modules={[Pagination]}
               speed={300}
               spaceBetween={20}
-              className="w-full relative !z-[3] !grid grid-flow-col h-full"
+              className="w-full relative !z-[3] !grid grid-flow-col h-full swiperGalleryWrapper"
               slides={activeGallery.length}
               onSwiper={setSwiperGallery2}
               slidesPerView={1}
@@ -251,7 +229,7 @@ function HeroWithSlider() {
                   const {desktop:productImage}= slide;
                   return (
 
-                    <SwiperSlide className="w-full min-h-[303px] z-[3] flex justify-center h-auto" key={i}>
+                    <SwiperSlide className="w-full h-auto min-h-[303px] z-[3] flex justify-center" key={i}>
                       <Image
                         src={productImage}
                         alt="Alt"
@@ -284,19 +262,19 @@ function HeroWithSlider() {
 
         </div>
 
-        <div className="flex flex-col items-center md2:items-start h-auto pt-10 md2:pt-0 product-content">
+        <div className="flex flex-col items-center md2:items-start h-auto pt-10 md2:pt-[18px] product-content">
 
-          <div className="px-5 md2:pr-[0] md2:pl-[26px] w-full flex flex-col items-center md2:items-start">
+          <div className="md2:pr-[0] md2:pl-[25px] w-full flex flex-col items-center md2:items-start">
 
             <h2 className="text-black tracking-[0.145em] leading-[22px] text-lg uppercase font-bold mb-2">
               {contentPage?.texts?.[contentPage?.language]?.collection_name}
             </h2>
 
-            <h1 className="max-w-[354px] text-center md2:text-left italic w-full tracking-[-0.1em] 3xs:leading-[56px] leading-[36px] text-[50px] 3xs:text-[60px] font-normal font-starduster text-primary uppercase mb-2">
+            <h1 className="max-w-[354px] text-center md2:text-left italic w-full tracking-[-0.1em] 3xs:leading-[56px] leading-[36px] text-[50px] 3xs:text-[60px] font-normal font-starduster text-primary uppercase mb-2 -ml-2.5">
               {contentPage?.texts?.[contentPage?.language]?.product_name}
             </h1>
 
-            <div className="flex items-center space-x-4 mb-8">
+            <div className="items-center space-x-4 mb-8 hidden md2:flex">
 
               <div className="flex items-center">
                 {range(0,5,1).map((star,i) => {

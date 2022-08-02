@@ -11,9 +11,13 @@ function FeaturedProduct() {
 
     <section className="w-full bg-primary flex flex-col px-5 py-20 md:p-[106px]">
 
-      <div className="w-full mx-auto border border-[#F7F7FB] pt-10 px-5 md:pl-[55px] md:pr-[44px] flex flex-col md:flex-row md:items-center ">
+      <div className="w-full mx-auto border border-[#F7F7FB] py-10 px-5 md:pl-[55px] md:pr-[44px] flex flex-col md:flex-row md:items-center ">
 
         <div className="flex flex-col items-center mr-[45px] w-full max-w-max order-2 md:order-1">
+          
+          <h3 className="text-white max-w-[318px] mb-6 w-full mx-auto text-center font-black tracking-[0.145em] uppercase leading-[17px] text-sm">
+            {contentPage?.texts?.[contentPage?.language]?.spl37_toptext}
+          </h3>
 
           <h2 className="text-secondary font-starduster tracking-[-0.1em] uppercase text-center text-[60px] leading-[56px] italic mb-6">
             SPLE37

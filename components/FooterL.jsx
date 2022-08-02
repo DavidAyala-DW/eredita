@@ -119,7 +119,7 @@ function Footer() {
 
         </div>
 
-        <div className="items-center space-x-5 w-full hidden md:flex">
+        <div className="items-center space-x-5 w-max hidden md:flex">
           <Eredita/>
           <Bar/>
           <Cineplex/>
@@ -127,7 +127,7 @@ function Footer() {
 
       </div>
 
-      <div className="flex flex-col pb-6">
+      <div className="flex-col pb-6 flex md:hidden">
 
         <p className="text-white font-normal text-xs leading-9">
           © 2022 Eredità Eyewear Group Inc.

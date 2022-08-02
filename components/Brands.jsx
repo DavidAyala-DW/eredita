@@ -1,9 +1,11 @@
 import Image from "next/image";
 import {AppContext} from "../helpers/Context";
+import { useEffect, useState,useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/free-mode";
 
-import { Navigation } from "swiper";
+import { Navigation, FreeMode, Autoplay } from "swiper";
 
 import YaleaBanner from "../public/yalea_banner.png";
 import YaleaLogo from "../public/yalea_logo.svg";
@@ -19,7 +21,6 @@ import LuckyLogo from "../public/lucky_logo.svg";
 
 import LeftArrow from "../public/left_arrow.svg";
 import RightArrow from "../public/right_arrow.svg";
-import { useEffect, useState,useContext } from "react";
 
 const slidesArray = [
 
@@ -63,7 +64,7 @@ function Brands() {
 
     <section className="w-full flex flex-col py-20">
 
-      <h2 className="text-primary text-[32px] font-bold leading-[38.4px] tracking-[0.145em] uppercase text-center mb-10">
+      <h2 className="text-primary text-[32px] max-w-[341px] mx-auto md2:max-w-full font-bold leading-[38.4px] tracking-[0.145em] uppercase text-center mb-10">
         {contentPage?.texts?.[contentPage?.language]?.collections_gallery_heading}
       </h2>
 
@@ -72,22 +73,29 @@ function Brands() {
           loop={true}
           centeredSlides={false}
           speed={300}
+          autoPlay={false}
+          initialSlide={1}
+          onSwiper={ (swiper) => {
+            swiper.slideTo(4,500)
+          }}
+          freeMode={false}
           spaceBetween={20}
-          className = "w-full flex relative"
+          className = "w-full flex swiperBrands relative"
           navigation={{
             prevEl: '.left-arrow',
             nextEl: '.right-arrow ',
           }}
-          modules={[Navigation]}
+          modules={[Navigation, FreeMode, Autoplay]}
           breakpoints = {{
 
             320: {
-              slidesPerView: 2,
+              slidesPerView: 2.4,
               spaceBetween: 20
             },
             768: {
               slidesPerView: 4,
-              spaceBetween: 20
+              spaceBetween: 20,
+              centeredSlides: false,
             }
 
           }}
@@ -143,8 +151,8 @@ function Brands() {
             })
           }
         
-          <div className="absolute z-20 top-0 left-0 h-full w-20 bg-brands-left"></div>
-          <div className="absolute z-20 top-0 right-0 h-full w-20 bg-brands-right rotate-180"></div>
+          <div className="absolute hidden md2:block z-20 top-0 left-0 h-full w-20 bg-brands-left"></div>
+          <div className="absolute hidden md2:block z-20 top-0 right-0 h-full w-20 bg-brands-right rotate-180"></div>
 
           <div className="absolute hidden md:block cursor-pointer left-arrow z-30 top-[calc(50%-15px)] left-7 ">          
             <LeftArrow/>
