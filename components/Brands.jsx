@@ -99,7 +99,7 @@ function Brands() {
             768: {
               slidesPerView: 4,
               spaceBetween: 20,
-              centeredSlides: true,
+              centeredSlides: false,
             }
 
           }}
