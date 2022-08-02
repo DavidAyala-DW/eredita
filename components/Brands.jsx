@@ -28,24 +28,28 @@ const slidesArray = [
     handle: "handle1",
     banner: YaleaBanner,
     Logo: YaleaLogo,
+    href: "https://ereditaeyewear.com/collections/yalea",
     maxW: 174
   },
   {
     handle: "handle2",
     banner: PoliceBanner,
     Logo: PoliceLogo,
+    href: "https://ereditaeyewear.com/collections/police",
     maxW: 170
   },
   {
     handle: "handle3",
     banner: JohnBanner,
     Logo: JohnLogo,
+    href: "https://ereditaeyewear.com/collections/john-varvatos",
     maxW: 236
   },
   {
     handle: "handle4",
     banner: LuckyBanner,
     Logo: LuckyLogo,
+    href: "https://ereditaeyewear.com/collections/lucky-brand",
     maxW: 202
   }
 
@@ -108,22 +112,22 @@ function Brands() {
           {
             slides.map((slide,i) => {
 
-              const {banner,Logo, maxW, handle} = slide;
+              const {banner,Logo, maxW, handle, href} = slide;
 
               return(
 
                 <SwiperSlide className="relative" key={i}>
 
-                  <div className="w-full">
+                  <a href={href} className="w-full block">
                     <Image
                       src={banner}
                       alt="Banner"
                       layout="responsive"
                       quality={100}
                     />
-                  </div>
+                  </a>
 
-                  <div className="absolute bottom-0 h-[100px] flex-col justify-center  w-full min-h-[25px] flex">
+                  <a href={href} className="absolute bottom-0 h-[100px] flex-col justify-center  w-full min-h-[25px] flex">
 
                     <style jsx>{`
 
@@ -147,7 +151,7 @@ function Brands() {
                     <div className={`relative logo-${handle} w-full mx-auto flex justify-center`}>
                       <Logo className="h-auto w-[inherit]"/>
                     </div>
-                  </div>
+                  </a>
 
                 </SwiperSlide>
 

@@ -58,7 +58,7 @@ export default function Bullettrain({texts,server}) {
   return (
 
     <>
-    
+
       <Script src="https://www.googletagmanager.com/gtag/js?id=UA-236279258-1"  strategy="lazyOnload"></Script>
         
         <Script strategy="lazyOnload" id="google-analytics">
@@ -74,12 +74,11 @@ export default function Bullettrain({texts,server}) {
       <main>      
         <Header/>
         <HeroWithSlider/>
-        <FeaturedProduct/>
         <div className="flex flex-col w-full space-y-10 py-20 bg-[#E8EBF1]">
           <h2 className="uppercase text-[32px] leading-[38.4px] leading-[14.5%] text-center text-primary tracking-[0.145em] font-bold">locations</h2>
           <div className="storerocket-store-locator"></div>
         </div>
-        
+        <FeaturedProduct/>
         <Brands/>
         <Footer/>
       </main>
