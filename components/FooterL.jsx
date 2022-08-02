@@ -24,9 +24,9 @@ function Footer() {
           </h2>
 
           <div className="flex flex-col space-y-[15px] font-normal text-lg leading-9 text-white mb-[50px]">
-            <a className="block" href="">sales@ereditaeyewear.com</a>
-            <a className="block" href="">order@ereditaeyewear.com</a>
-            <a className="block" href="">1-855-793-EYES</a>
+            <a className="block" href="mailto:sales@ereditaeyewear.com">sales@ereditaeyewear.com</a>
+            <a className="block" href="mailto:orders@ereditaeyewear.com">order@ereditaeyewear.com</a>
+            <a className="block" href="tel:1-855-793-3937" title="tel:1-855-793-3937">1-855-793-EYES</a>
           </div>
 
           <div className="items-center space-x-[30px] hidden md:flex">
@@ -61,19 +61,19 @@ function Footer() {
 
           <div className="flex flex-col space-y-[15px] text-white font-normal text-lg leading-9">
 
-            <a href="" className="block">
+            <a href="https://ereditaeyewear.com/policies/terms-of-service" className="block">
               {contentPage?.texts?.[contentPage?.language]?.footer_terms_services}
             </a>
 
-            <a href="" className="block">
+            <a href="https://ereditaeyewear.com/policies/refund-policy" className="block">
               {contentPage?.texts?.[contentPage?.language]?.footer_refund}
             </a>
 
-            <a href="" className="block">
+            <a href="https://ereditaeyewear.com/policies/privacy-policy" className="block">
               {contentPage?.texts?.[contentPage?.language]?.footer_privacy}
             </a>
 
-            <a href="" className="block">
+            <a href="https://ereditaeyewear.com/policies/shipping-policy" className="block">
               {contentPage?.texts?.[contentPage?.language]?.footer_shipping}
             </a>
             
@@ -115,14 +115,21 @@ function Footer() {
             © 2022 Eredità Eyewear Group Inc. | Website & Marketing by :
           </h3>
 
-          <LogoSpeers className="inline-block"/>
+          <a className="inline-block" href="https://www.speerscreative.ca">
+            <LogoSpeers className="inline-block"/>
+          </a>
+          
 
         </div>
 
         <div className="items-center space-x-5 w-max hidden md:flex">
-          <Eredita/>
+          <a href="https://ereditaeyewear.com/" className="inline-block">
+            <Eredita/>
+          </a>          
           <Bar/>
-          <Cineplex/>
+          <a href="https://www.cineplex.com/" className="inline-block">
+            <Cineplex/>
+          </a>
         </div>
 
       </div>
@@ -139,7 +146,9 @@ function Footer() {
             Website & Marketing by :
           </p>
 
-          <LogoSpeers className="inline-block"/>
+          <a className="inline-block" href="https://www.speerscreative.ca">
+            <LogoSpeers className="inline-block"/>
+          </a>
 
         </div>
 
