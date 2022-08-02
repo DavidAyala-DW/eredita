@@ -9,14 +9,17 @@ export default function Document() {
 
         <link rel="shortcut icon" href="/favicon.webp" />        
 
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-J4YZD7MQ9W"  strategy="afterInteractive"></Script>
-        <Script id="google-tag-manager">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());            
-            gtag('config', 'G-J4YZD7MQ9W');
-          `}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-J4YZD7MQ9W"  strategy="lazyOnload"></Script>
+        
+        <Script strategy="lazyOnload" id="google-analytics">
+            {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-J4YZD7MQ9W', {
+                page_path: window.location.pathname,
+                });
+            `}
         </Script>
                 
       </Head>
