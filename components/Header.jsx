@@ -32,9 +32,9 @@ function Header(){
 
       <div className="hidden items-center md2:flex">
 
-        <a className="bg-secondary block uppercase text-primary py-[13.5px] px-4 text-[17px] tracking-[0.145em] font-bold text-center">
+        <a href="https://ereditaeyewear.com/cart/41841573396640:1" className="bg-secondary block uppercase text-primary py-[13.5px] px-4 text-[17px] tracking-[0.145em] font-bold text-center">
           <p className="min-w-[192px] mx-auto">
-            Shop now
+          {contentPage?.texts?.[contentPage?.language]?.button_header}
           </p>        
         </a>
 
