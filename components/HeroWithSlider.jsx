@@ -17,6 +17,8 @@ import Badge from "../public/badge_featured.png";
 import HeroArrow from "../public/arrow_down.svg";
 import {galleries} from "../helpers/Slides";
 import {allVariants} from "../helpers/Variants";
+import FrameAction from "../public/frameAction.svg";
+import PoliceBullet from "../public/policeBulletTrain.png"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -204,7 +206,23 @@ function HeroWithSlider() {
 
         <div className="relative h-auto w-full flex flex-col">
 
-          <div className="swiperGallery hidden md2:block w-full h-full max-h-[83.9%]">
+          <div className="swiperGallery hidden md2:block w-full h-full max-h-[83.9%] relative">
+
+            <div className={`absolute w-[56.7%] max-w-[900px] top-[10.32%] z-20 left-[17.11%]  flex-col ${realIndexGallery != 0 ?  'hidden' : 'flex' }`}>
+
+              <div className="w-full">
+                <FrameAction/>
+              </div>   
+
+              <div className="w-full pl-[4.23%]">
+                <Image
+                  src={PoliceBullet}
+                  layout="responsive"
+                  alt="alt product slide"
+                />                
+              </div>
+
+            </div>
 
             <Swiper 
               modules={[Pagination]}
@@ -225,11 +243,11 @@ function HeroWithSlider() {
                     <SwiperSlide className="w-full h-auto min-h-[303px] z-[3] flex justify-center" key={i}>
                       <Image
                         src={productImage}
-                        alt="Alt"
+                        alt="Alt pdp"
                         layout="fill"
                         quality={100}
                         priority={true}
-                        className="z-[3] mx-auto h-full object-contain"
+                        className="z-[3] mx-auto h-full object-cover xl:object-contain"
                       />
                     </SwiperSlide>
 
