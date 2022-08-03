@@ -147,7 +147,7 @@ function Brands() {
                     />
                   </a>
 
-                  <a href={href} className="absolute bottom-0 h-[150px] flex-col justify-center  w-full min-h-[25px] flex">
+                  <a href={href} className="absolute bottom-0 h-[100px] md2:h-[150px] flex-col justify-center  w-full min-h-[10px] flex">
 
                     <style jsx>{`
 

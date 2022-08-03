@@ -302,10 +302,11 @@ function HeroWithSlider() {
                 {            
 
                   activeGallery.map((slide,i) => {
+
                     const {mobile:productImage}= slide;
                     return (
 
-                      <SwiperSlide className="cursor-pointer flex justify-center" key={i}>
+                      <SwiperSlide className={`cursor-pointer justify-center ${i == 0 ? 'hidden md2:flex' : ' flex'} `} key={i}>
                         <div className="w-full max-w-[450px] mx-auto">
                           <div className="relative pb-[100%] w-full">
                             <div className="absolute flex justify-center w-full h-full">
@@ -422,7 +423,7 @@ function HeroWithSlider() {
 
             </div>
 
-            <a className="w-full block py-[15.5px] px-[74px] border border-secondary bg-secondary mb-[30px] cursor-pointer" href={activeVariant?.link}>
+            <a id="buynow_button" className="w-full block py-[15.5px] px-[74px] border border-secondary bg-secondary mb-[30px] cursor-pointer" href={activeVariant?.link}>
               <p className="font-semibold text-sm leading-5 tracking-[0.045em] uppercase text-center text-[#0A0B0E]">
               {contentPage?.texts?.[contentPage?.language]?.hero_cta_text}
               </p>
@@ -442,7 +443,7 @@ function HeroWithSlider() {
                     <Plus/>
                   </div>
 
-                  <div onClick={handleCloseDescription} className="less hidden h-4 w-4 flex flex-col justify-center items-center">
+                  <div onClick={handleCloseDescription} className="less hidden h-4 w-4 flex flex-col justify-center items-center invert">
                     <Less/>
                   </div>
 

@@ -15,10 +15,25 @@ function Header(){
     newObject.language = language;
     setContentPage(newObject);
   }
+
+  function handleScroll(){
+
+    if(typeof window !== 'undefined'){
+
+      const buynow_button = document.querySelector("#buynow_button");
+
+      window.scrollTo({
+        top: (buynow_button.offsetTop-(window.innerHeight/2)),
+        behavior: "smooth"
+      });  
+
+    }
+
+  }
   
   return (
 
-    <header className="w-full flex items-center pt-[30px] md2:pt-[25px] pb-7 justify-between pl-5 md2:pl-[100px] pr-[160px] bg-primary relative">
+    <header className="w-full md:sticky top-0 relative z-[99] flex items-center pt-[30px] md2:pt-[25px] pb-7 justify-between pl-5 md2:pl-[100px] pr-[160px] bg-primary">
 
       <div className="hidden md2:flex items-center space-x-5">
         <Eredita/>
@@ -30,7 +45,7 @@ function Header(){
         <LogoMobile/>
       </div>
 
-      <div className="hidden items-center md2:flex">
+      <div className="hidden items-center md2:flex" onClick={e => { e.preventDefault(); handleScroll() } }>
 
         <a href="https://ereditaeyewear.com/cart/41841573396640:1" className="bg-secondary block uppercase text-primary py-[13.5px] px-4 text-[17px] tracking-[0.145em] font-bold text-center">
           <p className="min-w-[192px] mx-auto">
@@ -41,7 +56,7 @@ function Header(){
       </div>
 
       <div className="absolute top-[15px] right-[21px]">
-        <p className="text-white text-xs leading-[14px] tracking-[0.145em] uppercase font-normal">
+        <p className="text-white text-xs leading-[14px] tracking-[0.145em] uppercase font-normal space-x-1.5 md:space-x-1">
 
           <span onClick={() => handleChangeLanguage("english")} className={`cursor-pointer ${contentPage?.language == "english" ? 'font-black' : 'font-normal'  } `}>
             EN
