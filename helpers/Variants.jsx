@@ -1,7 +1,7 @@
-import Slide1Front from "../public/products/product1_front.png";
-import Slide2Front from "../public/products/product2_front.png";
-import Slide3Front from "../public/products/product3_front.png";
-import Slide4Front from "../public/products/product4_front.png";
+import Slide1Front from "../public/products/VPLE37_20520700_01_200x.webp";
+import Slide2Front from "../public/products/VPLE37_205206WR_01_200x.webp";
+import Slide3Front from "../public/products/VPLE37_20520722_01_200x.webp";
+import Slide4Front from "../public/products/VPLE37_2052700Y_01_200x.webp";
 
 export const allVariants = [
 

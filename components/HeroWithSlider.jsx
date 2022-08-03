@@ -211,7 +211,7 @@ function HeroWithSlider() {
 
         <div className="relative h-auto w-full flex flex-col">
 
-          <div className="swiperGallery hidden md2:block w-full h-full max-h-[708px]">
+          <div className="swiperGallery hidden md2:block w-full h-full max-h-[83.9%]">
 
             <Swiper 
               modules={[Pagination]}
@@ -233,7 +233,7 @@ function HeroWithSlider() {
                       <Image
                         src={productImage}
                         alt="Alt"
-                        layout="intrinsic"
+                        layout="fill"
                         quality={100}
                         priority={true}
                         className="z-[3] mx-auto h-full object-contain"
@@ -388,7 +388,18 @@ function HeroWithSlider() {
                           onClick={() => handleChangeVariant(handle)}
                           className={`pb-4 variant w-full relative after:absolute after:w-full after:h-[1.5px] ${activeVariant.handle == handle ? 'after:bg-black' : 'after:bg-[#B6B6B6]' } after:bottom-0 after:left-0`}
                         >
-                          <Image src={image} alt={"alt"} quality={100} layout="responsive" />
+                          <div className="pb-[100%] relative w-full">
+                            <div className="absolute inset-0 w-full h-full">
+                              <Image
+                                src={image}
+                                alt={"alt"}
+                                quality={100}
+                                layout="fill"
+                                className="object-cover"
+                              />
+                            </div>
+                          </div>
+                          
                         </div>
 
                       </SwiperSlide>
