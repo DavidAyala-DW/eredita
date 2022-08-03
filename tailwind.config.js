@@ -18,7 +18,7 @@ module.exports = {
         "brands-right": "linear-gradient(90deg, rgba(19, 19, 19, 0.8) 0%, rgba(0, 0, 0, 0) 86.05%)"
       },
       fontFamily:{
-        "starduster": ["Starduster Title Italic"]
+        "starduster": ["Starduster Title Italic, Avenir"]
       },
       boxShadow:{
         "introduction": "0px 2px 6px rgba(151, 172, 198, 0.25)"

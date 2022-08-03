@@ -56,7 +56,19 @@
   font-display: swap;
 };
 
+@font-face {
+  font-family: 'Avenir';
+  src: url('../public/AvenirLTStd-Book.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+};
 
+@font-face {
+  font-family: 'Avenir';
+  src: url('../public/AvenirLTStd-Black.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+};
 
 html{
   font-family: sans-serif;
@@ -69,7 +81,7 @@ html{
 }
 
 body,*{
-  font-family: "brooklyn";
+  font-family: "brooklyn","Avenir";
 }
 
 .swiperGallery{
