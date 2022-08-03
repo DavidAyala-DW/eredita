@@ -208,22 +208,6 @@ function HeroWithSlider() {
 
           <div className="swiperGallery hidden md2:block w-full h-full max-h-[83.9%] relative">
 
-            <div className={`absolute w-[56.7%] max-w-[900px] top-[10.32%] z-20 left-[17.11%]  flex-col ${realIndexGallery != 0 ?  'hidden' : 'flex' }`}>
-
-              <div className="w-full">
-                <FrameAction/>
-              </div>   
-
-              <div className="w-full pl-[4.23%]">
-                <Image
-                  src={PoliceBullet}
-                  layout="responsive"
-                  alt="alt product slide"
-                />                
-              </div>
-
-            </div>
-
             <Swiper 
               modules={[Pagination]}
               speed={300}
@@ -240,7 +224,23 @@ function HeroWithSlider() {
                   const {desktop:productImage}= slide;
                   return (
 
-                    <SwiperSlide className="w-full h-auto min-h-[303px] z-[3] flex justify-center" key={i}>
+                    <SwiperSlide className="w-full h-auto min-h-[303px] z-[3] flex justify-center relative" key={i}>
+
+                      <div className={`absolute w-[56.7%] max-w-[900px] top-[10.32%] z-20 left-[17.11%]  flex-col ${realIndexGallery != 0 ?  'hidden' : 'flex' }`}>
+                        <div className="w-full">
+                          <FrameAction/>
+                        </div>   
+
+                        <div className="w-full pl-[4.23%]">
+                          <Image
+                            src={PoliceBullet}
+                            layout="responsive"
+                            alt="alt product slide"
+                          />                
+                        </div>
+
+                      </div>
+                      
                       <Image
                         src={productImage}
                         alt="Alt pdp"
