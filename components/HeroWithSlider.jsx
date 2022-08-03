@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import {AppContext} from "../helpers/Context";
-import FirstImage from "../public/hero_banner-2.png";
+import FirstImage from "../public/FinalHero.png";
+import SecondImage from "../public/brand_and_glass.png";
 
 import Location from "../public/location1.png";
 
@@ -155,38 +156,30 @@ function HeroWithSlider() {
 
   return (
 
-    <section className="w-full md2:px-5 xl:px-0 xl:max-w-[85%] xl:mx-auto flex flex-col md:pt-20 pb-16">
+    <section className="w-full md2:px-5 xl:px-0 xl:max-w-[85%] xl:mx-auto flex flex-col md2:pt-20 pb-16">
 
       <div className="relative h-[512px] w-full grid md2:hidden">
 
         <Image
           src={FirstImage}
           alt="Alt text"
-          layout="responsive"
+          layout="fill"
           quality={100}
           priority={true}
-          className="object-cover object-right"
+          className="object-cover object-center"
         />
 
-        <div className="absolute w-[90.1%] max-w-[386px] bottom-[30.85%] left-[4.9%] xs:left-[calc(50%-193px)]">
-          <Image
-            src={Glass}
-            alt="Alt"
-            layout="intrinsic"
-            quality={100}
-            priority={true}
-            className="z-[3]"
-          />
-        </div>
-
-        <div className="absolute w-[31.54%] max-w-[136px] left-[19.6%] xs:left-[calc(51%-68px)] bottom-[58.5%] z-[4]">
-          <Image
-            src={Badge}
-            alt="Alt"
-            layout="intrinsic"
-            quality={100}
-            priority={true}
-          />
+        <div className="absolute top-10 w-full z-[2]">
+          <div className="flex flex-col w-full justify-center mx-auto max-w-[390px] relative">
+            <Image
+              src={SecondImage}
+              alt="Alt text"
+              layout="intrinsic"
+              quality={100}
+              priority={true}
+              className="object-cover object-center"
+            />
+          </div>
         </div>
 
         <div className="absolute w-full bottom-[22px] inset-x-0 flex flex-col">

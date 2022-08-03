@@ -19,6 +19,12 @@ import JohnLogo from "../public/john_logo.svg";
 import LuckyBanner from "../public/lucky_banner.png";
 import LuckyLogo from "../public/lucky_logo.svg";
 
+import PhilippBanner from "../public/philipp_banner.png";
+import PhilippLogo from "../public/philipp_logo.svg";
+
+import ChopardBanner from "../public/chopard_banner.png";
+import ChopardLogo from "../public/chopard_logo.svg";
+
 import LeftArrow from "../public/left_arrow.svg";
 import RightArrow from "../public/right_arrow.svg";
 
@@ -51,6 +57,20 @@ const slidesArray = [
     Logo: LuckyLogo,
     href: "https://ereditaeyewear.com/collections/lucky-brand",
     maxW: 202
+  },
+  {
+    handle: "handle5",
+    banner: PhilippBanner,
+    Logo: PhilippLogo,
+    href: "https://ereditaeyewear.com/collections/philipp-plein",
+    maxW: 150
+  },
+  {
+    handle: "handle6",
+    banner: ChopardBanner,
+    Logo: ChopardLogo,
+    href: "https://ereditaeyewear.com/collections/chopard",
+    maxW: 180
   }
 
 ]
@@ -127,7 +147,7 @@ function Brands() {
                     />
                   </a>
 
-                  <a href={href} className="absolute bottom-0 h-[100px] flex-col justify-center  w-full min-h-[25px] flex">
+                  <a href={href} className="absolute bottom-0 h-[150px] flex-col justify-center  w-full min-h-[25px] flex">
 
                     <style jsx>{`
 
