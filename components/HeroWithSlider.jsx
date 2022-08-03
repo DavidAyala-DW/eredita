@@ -225,22 +225,24 @@ function HeroWithSlider() {
                   return (
 
                     <SwiperSlide className="w-full h-auto min-h-[303px] z-[3] flex justify-center relative" key={i}>
-
-                      <div className={`absolute w-[56.7%] max-w-[900px] top-[10.32%] z-20 left-[17.11%]  flex-col ${realIndexGallery != 0 ?  'hidden' : 'flex' }`}>
-                        <div className="w-full">
-                          <FrameAction/>
-                        </div>   
-
-                        <div className="w-full pl-[4.23%]">
-                          <Image
-                            src={PoliceBullet}
-                            layout="responsive"
-                            alt="alt product slide"
-                          />                
-                        </div>
-
-                      </div>
-                      
+                      {
+                        i==0 && (
+                          <div className={`absolute w-[56.7%] max-w-[900px] top-[10.32%] z-20 left-[17.11%]  flex-col ${realIndexGallery != 0 ?  'hidden' : 'flex' }`}>
+                            <div className="w-full">
+                              <FrameAction/>
+                            </div>   
+    
+                            <div className="w-full pl-[4.23%]">
+                              <Image
+                                src={PoliceBullet}
+                                layout="responsive"
+                                alt="alt product slide"
+                              />                
+                            </div>
+    
+                          </div>
+                        )
+                      }
                       <Image
                         src={productImage}
                         alt="Alt pdp"
