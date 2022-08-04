@@ -425,7 +425,7 @@ function HeroWithSlider() {
 
               <div className="flex items-center space-x-2 max-w-max mx-auto">
 
-                <p className="font-semibold text-sm leading-5 cursor-pointer tracking-[0.045em] uppercase text-center text-[#0A0B0E]">
+                <p className="font-semibold  text-xs 3xs:text-sm leading-5 cursor-pointer tracking-[0.045em] uppercase text-center text-[#0A0B0E]">
                   {contentPage?.texts?.[contentPage?.language]?.store_locator_button_text}
                 </p>
 
