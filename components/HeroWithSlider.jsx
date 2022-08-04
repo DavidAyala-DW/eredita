@@ -269,13 +269,17 @@ function HeroWithSlider() {
 
           <div className="md2:pr-[0] md2:pl-[25px] w-full flex flex-col items-center md2:items-start">
 
-            <h2 className="text-black tracking-[0.145em] leading-[22px] text-lg uppercase font-bold mb-2">
-              {contentPage?.texts?.[contentPage?.language]?.collection_name}
-            </h2>
+            <div className="flex flex-col mb-2">
+
+              <h2 className="text-black tracking-[0.145em] leading-[22px] text-lg uppercase font-bold mb-2">
+                {contentPage?.texts?.[contentPage?.language]?.collection_name}
+              </h2>
 
             <h1 className="max-w-[354px] text-center md2:text-left italic w-full tracking-[-0.1em] 3xs:leading-[56px] leading-[36px] text-[50px] 3xs:text-[60px] font-normal font-starduster text-primary uppercase mb-2 -ml-2.5">
-              {contentPage?.texts?.[contentPage?.language]?.product_name}
-            </h1>
+                {contentPage?.texts?.[contentPage?.language]?.product_name}
+              </h1>
+
+            </div>
 
             <div className="items-center space-x-4 mb-8 hidden md2:flex">
 
@@ -317,13 +321,13 @@ function HeroWithSlider() {
                     return (
 
                       <SwiperSlide className={`cursor-pointer justify-center ${i == 0 ? 'hidden md2:flex' : ' flex'} `} key={i}>
-                        <div className="w-full max-w-[450px] mx-auto">
-                          <div className="relative pb-[100%] w-full">
+                        <div className="w-[80%] max-w-[450px] mx-auto">
+                          <div className="relative pb-[60%] w-full">
                             <div className="absolute flex justify-center w-full h-full">
                               <Image
                                 src={productImage}
                                 alt="slide"
-                                className="object-cover"
+                                className={`${(i+1) == activeGallery.length ? 'object-contain md:object-cover' : 'object-cover'} `}
                               />
                             </div>
                           </div>
