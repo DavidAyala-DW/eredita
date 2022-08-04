@@ -10,6 +10,7 @@ import Plus from "../public/plus.svg";
 
 import Quality from "../public/Acetate.svg";
 import Aesthetics from "../public/smart-glasses.svg";
+import Aesthetics2 from "../public/smart-glasses1.png"
 import Film from "../public/Film.svg";
 
 import Glass from "../public/VPLE37.png";
@@ -483,8 +484,13 @@ function HeroWithSlider() {
               </div>
 
               <div className="flex items-center space-x-[18px]">
-                <div className="max-w-max">
-                  <Aesthetics/>
+                <div className="max-w-[50px]">
+                  <Image
+                    src={Aesthetics2}
+                    layout="intrinsic"
+                    alt="alt"
+                  />
+                  {/* <Aesthetics/> */}
                 </div>
                 <p className="tracking-[0.2px] text-[#0A0B0E] text-base font-base leading-[150%]">
                   {contentPage?.texts?.[contentPage?.language]?.aesthetics_icon_text}
