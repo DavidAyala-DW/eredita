@@ -75,7 +75,9 @@ export default function Bullettrain({texts,server}) {
         <Header/>
         <HeroWithSlider/>
         <div className="flex flex-col w-full space-y-10 py-20 bg-[#E8EBF1] locator">
-          <h2 className="uppercase text-[32px] leading-[38.4px] leading-[14.5%] text-center text-primary tracking-[0.145em] font-bold">locations</h2>
+          <h2 className="uppercase text-[32px] leading-[38.4px] text-center text-primary tracking-[0.145em] font-bold">
+            {contentPage?.texts?.[contentPage?.language]?.store_locator_heading}
+          </h2>
           <div className="storerocket-store-locator"></div>
         </div>
         <FeaturedProduct/>
