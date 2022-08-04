@@ -322,8 +322,8 @@ function HeroWithSlider() {
                     return (
 
                       <SwiperSlide className={`cursor-pointer justify-center ${i == 0 ? 'hidden md2:flex' : ' flex'} `} key={i}>
-                        <div className="w-[80%] xs:w-full max-w-[450px] mx-auto">
-                          <div className="relative pb-[60%] xs:pb-[100%] w-full">
+                        <div className="w-full max-w-[450px] mx-auto">
+                          <div className="relative pb-[70%] xs:pb-[100%] w-full">
                             <div className="absolute flex justify-center w-full h-full">
                               <Image
                                 src={productImage}
