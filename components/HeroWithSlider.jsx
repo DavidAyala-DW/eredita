@@ -269,7 +269,7 @@ function HeroWithSlider() {
 
           <div className="md2:pr-[0] md2:pl-[25px] w-full flex flex-col items-center md2:items-start">
 
-            <div className="flex flex-col mb-2 w-full">
+            <div className="flex flex-col mb-2 w-full items-center">
 
               <h2 className="text-black tracking-[0.145em] leading-[22px] text-lg uppercase font-bold mb-2">
                 {contentPage?.texts?.[contentPage?.language]?.collection_name}
