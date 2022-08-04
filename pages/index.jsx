@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Image from 'next/image'
 import AuthorizedRetailer from '../components/AuthorizedRetailer'
 import BannerWithText from '../components/BannerWithText'
@@ -14,15 +15,30 @@ import Opthalmic from '../components/Opthalmic'
 import SunCollection from '../components/SunCollection'
 import Button from '../components/UI/Button'
 
+
+
 export default function Home() {
   return (
 
-    <div className="flex flex-col">
+    <>
+
+      <Script src="https://www.googletagmanager.com/gtag/js?id=UA-236279258-1"  strategy="lazyOnload"></Script>
+        
+      <Script strategy="lazyOnload" id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-236279258-1');
+        `}
+      </Script>
+
+      <div className="flex flex-col">
       
       <Head>
         <title>Eredità-Cineplex | Shop The Movies</title>
       </Head>
-
+      
       <Navbar/>
 
       <Hero/>
@@ -76,10 +92,11 @@ export default function Home() {
         />
 
       </a>
-
+    
       <Footer/>
 
     </div>
+    </>
 
   )
 }

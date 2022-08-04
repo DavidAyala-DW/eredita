@@ -8,14 +8,17 @@ module.exports = {
     extend: {
       colors: {
         "primary": "#001C71",
-        "contact_us": "#0066CC"
+        "contact_us": "#0066CC",
+        "secondary": "#FFCB05"
       },
       backgroundImage: {
         "hero": "linear-gradient(0deg, rgba(255, 255, 255, 0.83) 0%, rgba(255, 255, 255, 0.83) 56.23%, rgba(255, 255, 255, 0) 145.89%)",
-        "banner_text": "linear-gradient(179.81deg, #19213A 31.55%, #001C71 99.83%)"
+        "banner_text": "linear-gradient(179.81deg, #19213A 31.55%, #001C71 99.83%)",
+        'brands-left': "linear-gradient(90deg, rgba(19, 19, 19, 0.8) 0%, rgba(0, 0, 0, 0) 86.05%)",
+        "brands-right": "linear-gradient(90deg, rgba(19, 19, 19, 0.8) 0%, rgba(0, 0, 0, 0) 86.05%)"
       },
       fontFamily:{
-        "starduster": ["Starduster Title Italic"]
+        "starduster": ["Starduster Title Italic, Avenir"]
       },
       boxShadow:{
         "introduction": "0px 2px 6px rgba(151, 172, 198, 0.25)"
@@ -36,6 +39,7 @@ module.exports = {
       }
     },
     screens: {
+      "3xs": {'min': '390px'},
       "2xs": {'min': '420px'},
       "xs": {'min': '480px'},
       'sm': {'min': '640px'},
