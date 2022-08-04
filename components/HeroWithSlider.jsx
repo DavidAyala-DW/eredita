@@ -269,13 +269,17 @@ function HeroWithSlider() {
 
           <div className="md2:pr-[0] md2:pl-[25px] w-full flex flex-col items-center md2:items-start">
 
-            <h2 className="text-black tracking-[0.145em] leading-[22px] text-lg uppercase font-bold mb-2">
-              {contentPage?.texts?.[contentPage?.language]?.collection_name}
-            </h2>
+            <div className="flex flex-col mb-2 w-full items-center">
 
-            <h1 className="max-w-[354px] text-center md2:text-left italic w-full tracking-[-0.1em] 3xs:leading-[56px] leading-[36px] text-[50px] 3xs:text-[60px] font-normal font-starduster text-primary uppercase mb-2 -ml-2.5">
-              {contentPage?.texts?.[contentPage?.language]?.product_name}
-            </h1>
+              <h2 className="text-black tracking-[0.145em] leading-[22px] text-lg uppercase font-bold mb-2">
+                {contentPage?.texts?.[contentPage?.language]?.collection_name}
+              </h2>
+
+              <h1 className="max-w-[354px] text-center md2:text-left italic w-full tracking-[-0.1em] 2xs:leading-[56px] leading-[18px] text-[25px] 2xs:text-[60px] font-normal font-starduster text-primary uppercase -ml-2.5">
+                {contentPage?.texts?.[contentPage?.language]?.product_name}
+              </h1>
+
+            </div>
 
             <div className="items-center space-x-4 mb-8 hidden md2:flex">
 
@@ -317,13 +321,13 @@ function HeroWithSlider() {
                     return (
 
                       <SwiperSlide className={`cursor-pointer justify-center ${i == 0 ? 'hidden md2:flex' : ' flex'} `} key={i}>
-                        <div className="w-full max-w-[450px] mx-auto">
-                          <div className="relative pb-[100%] w-full">
+                        <div className="w-[80%] xs:w-full max-w-[450px] mx-auto">
+                          <div className="relative pb-[60%] xs:pb-[100%] w-full">
                             <div className="absolute flex justify-center w-full h-full">
                               <Image
                                 src={productImage}
                                 alt="slide"
-                                className="object-cover"
+                                className={`${(i+1) == activeGallery.length ? 'object-contain md:object-cover' : 'object-cover'} `}
                               />
                             </div>
                           </div>
@@ -392,7 +396,7 @@ function HeroWithSlider() {
                           onClick={() => handleChangeVariant(handle)}
                           className={`pb-4 variant w-full relative after:absolute after:w-full after:h-[1.5px] ${activeVariant.handle == handle ? 'after:bg-black' : 'after:bg-[#B6B6B6]' } after:bottom-0 after:left-0`}
                         >
-                          <div className="pb-[100%] relative w-full">
+                          <div className="pb-[60%] xs:pb-[100%] relative w-full">
                             <div className="absolute inset-0 w-full h-full">
                               <Image
                                 src={image}
