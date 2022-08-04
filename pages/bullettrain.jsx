@@ -71,6 +71,9 @@ export default function Bullettrain({texts,server}) {
         </Script>
   
       <Script src="//cdn.storerocket.io/widget.js"/>
+      <Head>
+        <title>Eredità-Cineplex | Shop The Movies</title>
+      </Head>
       <main>      
         <Header/>
         <HeroWithSlider/>
