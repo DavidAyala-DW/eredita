@@ -15,7 +15,7 @@ export const allVariants = [
   {
     handle: "slide2",
     image: Slide2Front,
-    color: "Blue havana",
+    color: "Blue Havana",
     link: "https://ereditaeyewear.com/cart/41841573429408:1"
   },
 

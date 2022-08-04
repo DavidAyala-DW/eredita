@@ -2,6 +2,7 @@
   "texts":{
 
     "english":{
+      "store_locator_heading": "Authorized Retailers",
       "button_header": "Shop now",
       "shop_movie_text": "shop the movies now",
       "collection_name": "Police Lifestyle",
@@ -28,6 +29,7 @@
     },
 
     "french":{
+      "store_locator_heading": "Revendeurs autorisés",
       "button_header": "Achetez maintenant",
       "shop_movie_text": "acheter le films maintenant",
       "collection_name": "Police Lifestyle",

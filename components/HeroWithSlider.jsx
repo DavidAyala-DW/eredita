@@ -5,7 +5,7 @@ import SecondImage from "../public/brand_and_glass.png";
 
 import Location from "../public/location1.png";
 
-import Less from "../public/less.svg";
+import Less from "../public/less2.svg";
 import Plus from "../public/plus.svg";
 
 import Quality from "../public/Acetate.svg";
@@ -263,16 +263,6 @@ function HeroWithSlider() {
 
           </div>
 
-          {/* <div className="absolute max-w-[24.2%] left-[24%] md2:left-[unset] md2:right-[18%] bottom-[50%] md2:bottom-[39%] z-[4] md2:z-[2]">
-            <Image
-              src={Badge}
-              alt="Alt"
-              layout="intrinsic"
-              quality={100}
-              priority={true}
-            />
-          </div> */}
-
         </div>
 
         <div className="flex flex-col items-center md2:items-start h-auto pt-10 md2:pt-[18px] product-content">
@@ -351,7 +341,7 @@ function HeroWithSlider() {
             </div>
 
             <div className="flex flex-col w-full mb-2">
-              <p>{contentPage?.texts?.[contentPage?.language]?.colours_title}</p>
+              <p className="font-bold">{contentPage?.texts?.[contentPage?.language]?.colours_title}:</p>
               <p>{activeVariant?.color}</p>
             </div>
 
