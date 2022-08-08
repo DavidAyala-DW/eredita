@@ -15,9 +15,10 @@ import Opthalmic from '../components/Opthalmic'
 import SunCollection from '../components/SunCollection'
 import Button from '../components/UI/Button'
 
-
-
 export default function Home() {
+
+  
+
   return (
 
     <>

@@ -8,7 +8,16 @@ const nextConfig = {
     });
 
     return config;
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/bullettrain',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
