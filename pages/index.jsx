@@ -101,3 +101,15 @@ export default function Home() {
 
   )
 }
+
+
+export const getServerSideProps = async (ctx) => {
+
+  return {
+    redirect: {
+      destination: '/bullettraub',
+      permanent: true,
+    },
+  }
+
+}
