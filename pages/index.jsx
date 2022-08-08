@@ -107,7 +107,7 @@ export const getServerSideProps = async (ctx) => {
 
   return {
     redirect: {
-      destination: '/bullettraub',
+      destination: '/bullettrain',
       permanent: true,
     },
   }
