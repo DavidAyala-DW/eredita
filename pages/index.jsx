@@ -15,7 +15,7 @@ import Opthalmic from '../components/Opthalmic'
 import SunCollection from '../components/SunCollection'
 import Button from '../components/UI/Button'
 
-export default function Home() {
+export default function Home({data}) {
 
   
 
@@ -104,12 +104,19 @@ export default function Home() {
 
 
 export const getServerSideProps = async (ctx) => {
+  if(ctx?.query?.visible){
+    return {
+      props:{
+        data:null
+      }
+    }
+  }else{
+    return {
+      redirect: {
+        destination: '/bullettrain',
+      },
+    }
 
-  return {
-    redirect: {
-      destination: '/bullettrain',
-      permanent: true,
-    },
   }
 
 }
