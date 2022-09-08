@@ -38,7 +38,8 @@ export default function Bullettrain({texts,server}) {
 
     let config = {
       selector: ".storerocket-store-locator",
-      account: "vk8PKozJbm"
+      account: "vk8PKozJbm",
+      filters:'98537'
     };
 
     if (typeof window !== 'undefined'){
